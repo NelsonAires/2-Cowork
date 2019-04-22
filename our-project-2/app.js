@@ -61,7 +61,7 @@ hbs.registerHelper('ifUndefined', (value, options) => {
   
 
 // default value for title local
-app.locals.title = 'Express - Generated with IronGenerator';
+app.locals.title = '2-CoWork';
 
 
 // Enable authentication using session + passport
@@ -74,6 +74,18 @@ app.use(session({
 app.use(flash());
 require('./passport')(app);
     
+app.use((req,res,next) => {
+  // Define a view variable named `isConnected`
+  // res.locals.isConnected = !!req.user 
+  req.app.locals.isConnected = !!req.user /// IMPORTANT
+
+  // Define a view variable named `connectedUser`
+  // res.locals.isConnected = req.user && req.user.role === 'user'
+
+  // Define a view variable named `isConnected`
+  // res.locals.isConnected = req.user && req.user.role === 'LOGED_IN'
+  next()
+})
 
 const index = require('./routes/index');
 app.use('/', index);

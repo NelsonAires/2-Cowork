@@ -22,10 +22,12 @@ let users = [
   {
     email: "Alice",
     password: bcrypt.hashSync("alice", bcrypt.genSaltSync(bcryptSalt)),
+    role: "user",
   },
   {
     email: "bob",
     password: bcrypt.hashSync("bob", bcrypt.genSaltSync(bcryptSalt)),
+    role: "user",
   }
 ]
 

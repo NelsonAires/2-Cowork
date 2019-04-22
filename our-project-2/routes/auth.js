@@ -67,13 +67,14 @@ router.post("/signup", (req, res, next) => {
         rejectUnauthorized: false
       }});
       transporter.sendMail({
-        from: '"Sofia 👻" <2coworkiron@gmail.com>',
+        from: '"2-CoWork 👻" <2coworkiron@gmail.com>',
         to: email, 
         subject: 'Confirm', 
         text: '',
-        html: `<b>${'lol'}</b>`
+        html: `<b>${'To confirm your email just smile to the sky!'}</b>`
       })
       //TODO: send the email 
+      console.log(req.app.locals.isConnected)
       res.redirect("/");
     })
     .catch(err => {
