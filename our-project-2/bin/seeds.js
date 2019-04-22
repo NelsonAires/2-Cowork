@@ -30,42 +30,17 @@ let users = [
 ]
 
 let coworks = [
-  {
-    name: 'Cowork Central Príncipe Real',
-    adress: { 
-      street:  'Rua da Alegria',
-      Number: '122B',
-      coordinates: [38.709082,-9.1553527]
-    },
-    email: 'sdfsf@asadh',
-    mobile: 'dskdjhd', 
-    images: 'dshdsd',
-    amenities: {
-      basics: ['wi-fi','air-conditioning'],
-      equipment: ['projector','printer'], 
-      facilities: ['kitchen','Event space for rent', 'Personal lockers'],
-      transportation: ['5 Minute Walk From Public Transit'],
-      relax_zones: ['lounge'] 
-
-
-    },
-    availability: 'sdsd',
-    price: 'dsds',
-
-
-
-  },
   { 
     name: 'Cowork Central Cais do Sodré',
     adress: {
       street:"Praça Duque da Terceira, Lisbon, Portugal",
       number:'24',
-      coordinates: [-9.421558, 39.007024]
+      coordinates: [-9.1452867, 38.7066134,]
     },
     email:'@gmail.com',
-    website:'www.caisdosodre.com',
-    images:['url:'],
-    description:[''],
+    website:'https://www.coworkcentral.pt',
+    images:['url: '],
+    description: 'Cowork Central is a hub for creative, independent minds situated bang in the heart of Lisbon. As well as desk and office space for freelancers, startups and small companies we provide a range of services with the goal of enabling you to focus on what’s most important: the success of your business.',
     amenities:{
       basics:['Wifi','Air-conditioning'],
       equipment:['Projector','Printer'],
@@ -73,9 +48,87 @@ let coworks = [
       transportation:['5 Minute Walk From Public Transit'],
       relax_zones:['Lounge', 'Rooftop'],
     },
-    prices:['10€','20€','15€'],
-    opening_hours:['9h-19h', '8h-23h', '7h-22h']
+    prices:['EUR 12.50/per day'],
+    opening_hours: {
+      week_day: '9:00 am - 9:00 pm',
+      weekend: 'closed' 
+    }
   },
+  { 
+    name: 'Cowork Central Príncipe Real',
+    adress: {
+      street:"Rua da Alegria, 3rd floor, Lisbon, Portugal",
+      number:'122B',
+      coordinates: [-9.1497635,17, 38.7172234]
+    },
+    email:'@gmail.com',
+    website:'https://www.coworkcentral.pt',
+    images:['url: '],
+    description: 'Cowork Central is a hub for creative, independent minds situated bang in the heart of Lisbon. As well as desk and office space for freelancers, startups and small companies we provide a range of services with the goal of enabling you to focus on what’s most important: the success of your business.',
+    amenities:{ 
+      basics:['Wifi','Air-conditioning'],
+      equipment:['Projector','Printer'],
+      facilities:['Kitchen','Personal lockers','Event Space For Rent'],
+      transportation:['5 Minute Walk From Public Transit'],
+      relax_zones:['Lounge', 'Rooftop'],
+    },
+    prices:['EUR 12.50/per day'],
+    opening_hours: {
+      week_day: '9:00 am - 8:00 pm',
+      weekend: 'closed' 
+    },
+  },
+  { 
+    name: 'Avila Spaces',
+    adress: {
+      street:"Av. República, Lisbon, Portugal",
+      number:'6',
+      coordinates: [-9.1470209, 38.7348591]
+    },
+    email:'@gmail.com',
+    website:'',
+    images:['url: '],
+    description: 'Located at Av. da República, close to Saldanha, it is a wide and quiet space, where several companies and professionals work, occupying one or more work stations, using the support of a professional secretariat, meeting and work rooms.',
+    amenities:{ 
+      basics:['Wifi','Air-conditioning'],
+      equipment:['Projector','Printer'],
+      facilities:['Kitchen','Personal lockers','Event Space For Rent'],
+      transportation:['5 Minute Walk From Public Transit'],
+      relax_zones:['Lounge', 'Rooftop'],
+    },
+    prices:['EUR EUR 40.00/per day'],
+    opening_hours: {
+      week_day: '9:00 am - 7:00 pm',
+      weekend: 'closed' 
+    },
+  },
+  { 
+    name: 'IDEIA Parque das Nações',
+    adress: {
+      street:"Av. D. João II, Lisbon, Portugal",
+      number:'nº35 , 11º',
+      coordinates: []
+    },
+    email:'@gmail.com',
+    website:'',
+    images:['url: '],
+    description: 'Located at Av. da República, close to Saldanha, it is a wide and quiet space, where several companies and professionals work, occupying one or more work stations, using the support of a professional secretariat, meeting and work rooms.',
+    amenities:{ 
+      basics:['Wifi','Air-conditioning'],
+      equipment:['Projector','Printer'],
+      facilities:['Kitchen','Personal lockers','Event Space For Rent'],
+      transportation:['5 Minute Walk From Public Transit'],
+      relax_zones:['Lounge', 'Rooftop'],
+    },
+    prices:['EUR EUR 40.00/per day'],
+    opening_hours: {
+      week_day: '9:00 am - 7:00 pm',
+      weekend: 'closed' 
+    },
+  },  
+
+     
+    
 
   {},//COWORK
 
