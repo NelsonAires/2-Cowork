@@ -6,6 +6,10 @@ const userSchema = new Schema({
     type: String, required:true, unique:true},
   password: {
     type: String, required:true},
+    idAdmin: {
+    type: Boolean,
+    defaultValue: false
+    },
   role: {
     type: String,
     default: "user"
