@@ -55,7 +55,29 @@ let coworks = [
 
 
   },
-  {}, 
+  { 
+    name: 'Cowork Central Cais do Sodré',
+    adress: {
+      street:"Praça Duque da Terceira, Lisbon, Portugal",
+      number:'24',
+      coordinates: [-9.421558, 39.007024]
+    },
+    email:'@gmail.com',
+    website:'www.caisdosodre.com',
+    images:['url:'],
+    description:[''],
+    amenities:{
+      basics:['Wifi','Air-conditioning'],
+      equipment:['Projector','Printer'],
+      facilities:['Kitchen','Personal lockers','Event Space For Rent'],
+      transportation:['5 Minute Walk From Public Transit'],
+      relax_zones:['Lounge', 'Rooftop'],
+    },
+    prices:['10€','20€','15€'],
+    opening_hours:['9h-19h', '8h-23h', '7h-22h']
+  },
+
+  {},//COWORK
 
 ]
 
