@@ -32,6 +32,7 @@ let users = [
 ]
 
 let coworks = [
+  //1
   { 
     name: 'Cowork Central Cais do Sodré',
     adress: {
@@ -160,8 +161,7 @@ let coworks = [
       weekend: 'closed' 
     }
   },
-////////////////////////////////////////
- 
+//6 
   { 
     name: 'Cowork Central Príncipe Real',
     adress: {
@@ -186,6 +186,7 @@ let coworks = [
       weekend: 'closed' 
     },
   },
+  //7
   { 
     name: 'Avila Spaces',
     adress: {
@@ -194,7 +195,7 @@ let coworks = [
       coordinates: [-9.1470209, 38.7348591]
     },
     email:'@gmail.com',
-    website:'',
+    website:'https://www.coworker.com/portugal/lisbon/avila-spaces',
     images:['url: '],
     description: 'Located at Av. da República, close to Saldanha, it is a wide and quiet space, where several companies and professionals work, occupying one or more work stations, using the support of a professional secretariat, meeting and work rooms.',
     amenities:{ 
@@ -204,36 +205,337 @@ let coworks = [
       transportation:['5 Minute Walk From Public Transit'],
       relax_zones:['Lounge', 'Rooftop'],
     },
-    prices:['EUR EUR 40.00/per day'],
+    prices:['EUR 40.00/per day'],
     opening_hours: {
       week_day: '9:00 am - 7:00 pm',
       weekend: 'closed' 
     },
   },
+  //8
   { 
     name: 'IDEIA Parque das Nações',
     adress: {
       street:"Av. D. João II, Lisbon, Portugal",
-      number:'nº35 , 11º',
-      coordinates: []
+      number:'nº35 , 11th floor',
+      coordinates: [-9.100224, 38.7702102],
     },
     email:'@gmail.com',
-    website:'',
+    website:'https://www.coworker.com/portugal/lisbon/ideia-parque-das-nacoes',
     images:['url: '],
-    description: 'Located at Av. da República, close to Saldanha, it is a wide and quiet space, where several companies and professionals work, occupying one or more work stations, using the support of a professional secretariat, meeting and work rooms.',
+    description: 'N/A',
     amenities:{ 
       basics:['Wifi','Air-conditioning'],
-      equipment:['Projector','Printer'],
-      facilities:['Kitchen','Personal lockers','Event Space For Rent'],
-      transportation:['5 Minute Walk From Public Transit'],
-      relax_zones:['Lounge', 'Rooftop'],
+      equipment:['Scanner','Printer'],
+      facilities:['Kitchen','Personal lockers','Skype Room'],
+      transportation:['10 Minute Walk From Public Transit'],
+      relax_zones:['Lounge', 'Chill-out Area'],
     },
-    prices:['EUR EUR 40.00/per day'],
+    prices:['EUR 15.00/per day'],
     opening_hours: {
-      week_day: '9:00 am - 7:00 pm',
+      week_day: '9:00 am - 6:00 pm',
       weekend: 'closed' 
     },
-  },  
+  }, 
+  //9 
+  { 
+    name: 'Espaço 3D',
+    adress: {
+      street:"Rua Braamcamp, Lisbon, Portugal",
+      number:'nº84 , 3rd floor',
+      coordinates: [-9.1548361, 38.7216649],
+    },
+    email:'@gmail.com',
+    website:'https://www.coworker.com/portugal/lisbon/espaco-3d',
+    images:['url: '],
+    description: 'Come and meet the most interesting co-work community in Lisbon.We believe in balance and sustainability, that life is more than just work, that creative processes arise when least expected. We work passionately and are bind to something much bigger than us: helping entrepreneurs creating their dreams. We provide not just workspace, but also community and services that support forward-thinking people and companies.',
+    amenities:{ 
+      basics:['Wifi','Air-conditioning'],
+      equipment:['Scanner','Printer'],
+      facilities:['Kitchen','Personal lockers','Skype Room'],
+      transportation:['2 Minute Walk From Public Transit'],
+      relax_zones:['Lounge', 'Chill-out Area'],
+    },
+    prices:['EUR 15.00/per day'],
+    opening_hours: {
+      week_day: '8:30 am - 7:00 pm',
+      weekend: 'closed' 
+    },
+  }, 
+  //10 
+  { 
+    name: 'IDEIA Palácio Sottomayor',
+    adress: {
+      street:"Avenida Fontes Pereira de Melo, Lisbon, Portugal",
+      number:'16',
+      coordinates: [-9.1495605, 38.728708],
+    },
+    email:'@gmail.com',
+    website:'https://www.coworker.com/portugal/lisbon/ideia-palacio-sottomayor',
+    images:['url: '],
+    description: 'N/A',
+    amenities:{ 
+      basics:['Wifi','Air-conditioning'],
+      equipment:['Scanner','Printer'],
+      facilities:['Skype Room'],
+      transportation:['2 Minute Walk From Public Transit'],
+      relax_zones:['Lounge', 'Chill-out Area'],
+    },
+    prices:['EUR 15.00/per day'],
+    opening_hours: {
+      week_day: '9:00 am - 6:00 pm',
+      weekend: 'closed' 
+    },
+  }, 
+  //11
+  { 
+    name: 'Coworklisboa',
+    adress: {
+      street:" Rua Rodrigues Faria, Lisbon, Portugal",
+      number:'103 LxFactory - Edifício I - 4º Andar ',
+      coordinates: [-9.1807824,38.702878],
+    },
+    email:'@gmail.com',
+    website:'https://www.coworker.com/portugal/lisbon/coworklisboa',
+    images:['url: '],
+    description: 'A shared workspace with an eclectic mix of independent professionals sounds like an intriguing venture to get into doesn’t it? If you answered yes, you’re up for some great times ahead at Coworklisboa. Diverse professionals from designers, entrepreneurs, techies to scientists make their way to share a workspace in Coworklisboa. You’re probably the only one left who’s missing out on all the fun.',
+    amenities:{ 
+      basics:['Wifi'],
+      equipment:['Scanner','Printer'],
+      facilities:['Kitchen'],
+      transportation:['5 Minute Walk From Public Transit'],
+      relax_zones:['Lounge', 'Chill-out Area'],
+    },
+    prices:['EUR 12.00/per day'],
+    opening_hours: {
+      week_day: '24 hours',
+      weekend: '24 hours' 
+    },
+  }, 
+  //12
+  { 
+    name: 'Workup',
+    adress: {
+      street:"Rua Tomás da Fonseca, Lisbon, Portugal",
+      number:'40A',
+      coordinates: [-9.1692683, 38.755383],
+    },
+    email:'@gmail.com',
+    website:'https://www.coworker.com/portugal/lisbon/workup',
+    images:['url: '],
+    description: 'Workup is an innovative Cowork concept that provides a workspace in the center of Lisbon, 5 minutes from the airport in a privileged location beside the university stadium, next to the golf Academy, very close to the Classical University and the Catholic University, on the same street where is one of the largest business area of ​​Lisbon, Torres de Lisboa, with an excellent location both for those who want to develop their academic work, professional or business activity.',
+    amenities:{ 
+      basics:['Wifi','Air-conditioning'],
+      equipment:['Video Recording Equipment','Printer'],
+      facilities:['Kitchen','Personal lockers','Co-living Accommodation'],
+      transportation:['5 Minute Walk From Public Transit'],
+      relax_zones:['Outdoor Terrace', 'Swimming Pool'],
+    },
+    prices:['EUR 15.00/per day'],
+    opening_hours: {
+      week_day: '7:00 am - 11:00 pm',
+      weekend: '9:00 am - 7:00 pm' 
+    },
+  }, 
+  //13
+  { 
+    name: 'House of Maria Amalia',
+    adress: {
+      street:"Rua Padre Luís Aparício, Lisbon, Portugal",
+      number:'9, 6th floor',
+      coordinates: [-9.1451212, 38.7249888,],
+    },
+    email:'@gmail.com',
+    website:'https://www.coworker.com/portugal/lisbon/house-of-maria-amalia#kohub_nginx_main',
+    images:['url: '],
+    description: 'PET FRIENDLY COWORKING SPACE | LISBOA ',
+    amenities:{ 
+      basics:['Wifi','Air-conditioning'],
+      equipment:['Scanner','Printer'],
+      facilities:['Kitchen'],
+      transportation:['5 Minute Walk From Public Transit'],
+      relax_zones:['N/A'],
+    },
+    prices:['EUR 15.00/per day'],
+    opening_hours: {
+      week_day: '24 hours',
+      weekend: '24 hours' 
+    },
+  }, 
+  //14
+  { 
+    name: 'BWORKING SPACE',
+    adress: {
+      street:"Rua Latino Coelho, store, Lisbon, Portugal",
+      number:'13A',
+      coordinates: [-9.1500005, 38.7321525],
+    },
+    email:'@gmail.com',
+    website:'https://www.coworker.com/portugal/lisbon/bworking-space',
+    images:['url: '],
+    description: 'The ideal solution for creative and professional businessmen looking for a space in Lisbon. The tables are surrounded by giant windows that create an incredible atmosphere of comfort that only natural light can provide and if you still want to catch the beautiful Lisbon sun.',
+    amenities:{ 
+      basics:['Wifi','Air-conditioning'],
+      equipment:['Scanner','Printer'],
+      facilities:['Kitchen','Skype Room', 'Podcasting Room'],
+      transportation:['5 Minute Walk From Public Transit'],
+      relax_zones:['Lounge', 'Outdoor Terrace'],
+    },
+    prices:['EUR 18.45/per day'],
+    opening_hours: {
+      week_day: '8:30 am - 6:00 pm',
+      weekend: 'closed' 
+    },
+  }, 
+  //15
+  { 
+    name: 'Garagem Infinita',
+    adress: {
+      street:"Rua Damasceno Monteiro, Lisbon, Portugal",
+      number:'110D',
+      coordinates: [-9.1337696, 38.7212756],
+    },
+    email:'@gmail.com',
+    website:'https://www.coworker.com/portugal/lisbon/garagem-infinita',
+    images:['url: '],
+    description: 'We host creatives, designers, developers, entrepreneurs, and digital nomads in a remodeled garage-turned-office. If you need temporary office space, a meeting room to pitch your startup or want to organize an event or workshop in Portugal, Garagem Infinita is ready to help you.',
+    amenities:{ 
+      basics:['Wifi','Air-conditioning'],
+      equipment:['Scanner','Printer'],
+      facilities:['Kitchen','Skype Room'],
+      transportation:['5 Minute Walk From Public Transit'],
+      relax_zones:['Lounge', 'Chill-out Area'],
+    },
+    prices:['EUR 15.00/per day'],
+    opening_hours: {
+      week_day: '9:00 am - 6:00 pm',
+      weekend: 'closed' 
+    },
+  }, 
+  //16
+  { 
+    name: 'WIP Lisboa',
+    adress: {
+      street:"Rua São Bento, Lisbon, Portugal",
+      number:'31',
+      coordinates: [-9.1549633, 38.7107974],
+    },
+    email:'@gmail.com',
+    website:'https://www.coworker.com/portugal/lisbon/wip-lisboa',
+    images:['url: '],
+    description: 'WIP is a community driven work space designed to inspire and support your individual and collaborative projects.',
+    amenities:{ 
+      basics:['Wifi','Air-conditioning'],
+      equipment:['Scanner','Printer'],
+      facilities:['Kitchen','Skype Room', 'Personal Lockers'],
+      transportation:['5 Minute Walk From Public Transit'],
+      relax_zones:['Outdoor Terrace', 'Chill-out Area'],
+    },
+    prices:['EUR 15.00/per day'],
+    opening_hours: {
+      week_day: '9:00 am - 6:00 pm',
+      weekend: 'closed' 
+    },
+  }, 
+  //17
+  { 
+    name: 'The Block Cafe',
+    adress: {
+      street:"Rua Latino Coelho, 1, Lisbon, Portugal",
+      number:'63',
+      coordinates: [-9.1491892, 38.7317572],
+    },
+    email:'@gmail.com',
+    website:'https://www.coworker.com/portugal/lisbon/the-block-cafe',
+    images:['url: '],
+    description: "Our space feels much more like a massive living room than a traditional coworking-space, with different ambiances: sofas, standing desks, individual and group tables.We also have an amazing terrace with it's own micro climate, it's used even in the winter.",
+    amenities:{ 
+      basics:['Wifi','Heating'],
+      equipment:['Scanner','Printer', 'Projector'],
+      facilities:['Kitchen','Skype Room', 'Phone Booth'],
+      transportation:['5 Minute Walk From Public Transit'],
+      relax_zones:['Lounge', 'Outdoor Terrace'],
+    },
+    prices:['EUR 15.00/per day'],
+    opening_hours: {
+      week_day: '10:00 am - 6:30 pm',
+      weekend: 'closed' 
+    },
+  }, 
+  //18
+  { 
+    name: 'Entrepreneur Houses',
+    adress: {
+      street:"Rua dos lirios, Amora, Lisbon, Portugal",
+      number:'271',
+      coordinates: [-9.1485324, 38.5979802],
+    },
+    email:'@gmail.com',
+    website:'https://www.coworker.com/portugal/lisbon/entrepreneur-houses',
+    images:['url: '],
+    description: 'Entrepreneur Houses has a spacious 250m2 Co-Working space. It is located on the south shore of the Rio Tejo, close to Aroeira, Costa da Caparica and the different beaches, where you can do Yoga, Surf, Kite Surf...',
+    amenities:{ 
+      basics:['Wifi','Heating'],
+      equipment:['Scanner','Printer', 'Projector'],
+      facilities:['Kitchen','Skype Room', 'Showers'],
+      transportation:['5 Minute Walk From Public Transit'],
+      relax_zones:['Swimming Pool', 'Outdoor Terrace', 'Yoga Studio'],
+    },
+    prices:['EUR 15.00/per day'],
+    opening_hours: {
+      week_day: '8:30 am - 8:30 pm',
+      weekend: '11:00 am - 7:00 pm' 
+    },
+  }, 
+  //19
+  { 
+    name: 'BECO',
+    adress: {
+      street:"Rua da Madalena, Lisbon, Portugal",
+      number:'214',
+      coordinates: [-9.1385534, 38.7132222],
+    },
+    email:'@gmail.com',
+    website:'https://www.coworker.com/portugal/lisbon/beco',
+    images:['url: '],
+    description: 'BECO is a co-working space focused in the creative industries, that aims to result has a micro and tailored creative hub that inspires everyone who is involved. The synergistic effect will be enhanced by the fact that this space only accommodates 25 creative minds. Besides this, BECO intent to activate several talks & exhibitions to empower talented creatives and share new thoughts.',
+    amenities:{ 
+      basics:['Wifi','Heating'],
+      equipment:['Scanner','Printer'],
+      facilities:['Kitchen','Personal Lockers', 'Event Space For Rent'],
+      transportation:['5 Minute Walk From Public Transit'],
+      relax_zones:['Outdoor Terrace', 'Chill-out Area'],
+    },
+    prices:['EUR 14.00/per day'],
+    opening_hours: {
+      week_day: '8:00 am - 10:00 pm',
+      weekend: 'closed' 
+    },
+  }, 
+  //20
+  { 
+    name: 'Village Underground',
+    adress: {
+      street:"Rua 1º de Maio, Lisbon, Portugal",
+      number:'103',
+      coordinates: [-9.1836484, 38.7013927],
+    },
+    email:'@gmail.com',
+    website:'https://www.coworker.com/portugal/lisbon/village-underground',
+    images:['url: '],
+    description: 'An international platform for culture and creativity, Village Underground sits in the coworking hub of Lisbon, Portugal. A quirky space, the venue has a unique architecture in that the structure is made from shipping containers and double decker buses recycled into office spaces, a recording studio plus a restaurant and a conference room. It is now a landmark on the Lisbon landscape and home to the creative community in the city.',
+    amenities:{ 
+      basics:['Wifi','Air-conditioning'],
+      equipment:['Recording Studio'],
+      facilities:['Event Space For Rent'],
+      transportation:['5 Minute Walk From Public Transit'],
+      relax_zones:['Lounge', 'Outdoor Terrace'],
+    },
+    prices:['EUR 15.00/per day'],
+    opening_hours: {
+      week_day: '24 hours',
+      weekend: '24 hours' 
+    },
+  }, 
 
      
     
