@@ -67,7 +67,7 @@ router.post("/signup", (req, res, next) => {
         rejectUnauthorized: false
       }});
       transporter.sendMail({
-        from: '"Sofia 👻" <2coworkiron@gmail.com>',
+        from: '"Sofia 👻" <charlotte.treuse7fff00@gmail.com>',
         to: email, 
         subject: 'Confirm', 
         text: '',

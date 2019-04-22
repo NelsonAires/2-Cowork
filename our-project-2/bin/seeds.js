@@ -29,6 +29,36 @@ let users = [
   }
 ]
 
+let coworks = [
+  {
+    name: 'Cowork Central Príncipe Real',
+    adress: { 
+      street:  'Rua da Alegria',
+      Number: '122B',
+      coordinates: [38.709082,-9.1553527]
+    },
+    email: 'sdfsf@asadh',
+    mobile: 'dskdjhd', 
+    images: 'dshdsd',
+    amenities: {
+      basics: ['wi-fi','air-conditioning'],
+      equipment: ['projector','printer'], 
+      facilities: ['kitchen','Event space for rent', 'Personal lockers'],
+      transportation: ['5 Minute Walk From Public Transit'],
+      relax_zones: ['lounge'] 
+
+
+    },
+    availability: 'sdsd',
+    price: 'dsds',
+
+
+
+  },
+  {}, 
+
+]
+
 User.deleteMany()
 .then(() => {
   return User.create(users)
