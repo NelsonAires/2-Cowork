@@ -31,7 +31,6 @@ router.post("/signup", (req, res, next) => {
   if (email === "" || password === "") {
     res.render("auth/signup", { message: "Indicate email and password" });
     return;
-
   }
 
   User.findOne({ email }, "email", (err, user) => {
@@ -74,9 +73,14 @@ router.post("/signup", (req, res, next) => {
         html: `<b>${'To confirm your email just smile to the sky!'}</b>`
       })
       //TODO: send the email 
-      console.log(req.app.locals.isConnected)
-      res.redirect("/");
+      
+    //   newUser.save()
+    // .then(() => {
+    //   req.login(newUser, () => {
+        res.redirect("/");
+    //   });
     })
+
     .catch(err => {
       res.render("auth/signup", { message: "Something went wrong" });
     })
