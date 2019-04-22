@@ -2,6 +2,7 @@ const express = require("express");
 const passport = require('passport');
 const router = express.Router();
 const User = require("../models/User");
+const nodemailer = require('nodemailer');
 
 // Bcrypt to encrypt passwords
 const bcrypt = require("bcrypt");
@@ -12,6 +13,7 @@ router.get("/login", (req, res, next) => {
   res.render("auth/login", { "message": req.flash("error") });
 });
 
+//On "POST/auth/login", the Passport Local Strategy
 router.post("/login", passport.authenticate("local", {
   successRedirect: "/",
   failureRedirect: "/auth/login",
@@ -29,6 +31,7 @@ router.post("/signup", (req, res, next) => {
   if (email === "" || password === "") {
     res.render("auth/signup", { message: "Indicate email and password" });
     return;
+
   }
 
   User.findOne({ email }, "email", (err, user) => {
@@ -40,13 +43,37 @@ router.post("/signup", (req, res, next) => {
     const salt = bcrypt.genSaltSync(bcryptSalt);
     const hashPass = bcrypt.hashSync(password, salt);
 
+    const characters = '0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ';
+    let confirmationCode = '';
+    for (let i = 0; i < 25; i++) {
+        confirmationCode += characters[Math.floor(Math.random() * characters.length )];
+    } 
+
     const newUser = new User({
       email,
-      password: hashPass
+      password: hashPass, 
+      confirmationCode
     });
 
     newUser.save()
     .then(() => {
+      let transporter = nodemailer.createTransport({
+        service: 'Gmail',
+        auth: {
+          user: process.env.GMAIL_USER,
+          pass: process.env.GMAIL_PASS
+      },
+      tls: {
+        rejectUnauthorized: false
+      }});
+      transporter.sendMail({
+        from: '"Sofia 👻" <2coworkiron@gmail.com>',
+        to: email, 
+        subject: 'Confirm', 
+        text: '',
+        html: `<b>${'lol'}</b>`
+      })
+      //TODO: send the email 
       res.redirect("/");
     })
     .catch(err => {
