@@ -133,15 +133,17 @@ router.get("/confirmation/:confirmationCode", (req, res) => {
     })
     .then(user => {
       if (user.active === true) {
-        res.render('/')
+        res.redirect('/signed-up')
       } else {
         user.active = true;
         user.save()
           .then(() => {
             res.render("/");
+            //sucessful
           })
           .catch(err => {
             res.render('/')
+            //failure
           })
       }
     })
