@@ -38,7 +38,7 @@ let coworks = [
     adress: {
       street:"Praça Duque da Terceira, Lisbon, Portugal",
       number:'24',
-      coordinates: [-9.1452867, 38.7066134,]
+      coordinates: [-9.1452867, 38.7066134]
     },
     email:'caisdosodre@gmail.com',
     website:'https://www.caisdosodre.com',
@@ -92,7 +92,7 @@ let coworks = [
     adress: {
       street:"Rua 1º de Maio, Museu Carris, Lisbon, Portugal",
       number:'213',
-      coordinates: [-9.1791089,38.70138559999999]
+      coordinates: [-9.1828413, 38.7020686]
     },
     email:'impacthublisbon@gmail.com',
     website:'https://www.impacthublisbon.com',
@@ -342,7 +342,7 @@ let coworks = [
     adress: {
       street:"Rua Padre Luís Aparício, Lisbon, Portugal",
       number:'9, 6th floor',
-      coordinates: [-9.1451212, 38.7249888,],
+      coordinates: [-9.1451212, 38.7249888],
     },
     email:'@gmail.com',
     website:'https://www.coworker.com/portugal/lisbon/house-of-maria-amalia#kohub_nginx_main',
