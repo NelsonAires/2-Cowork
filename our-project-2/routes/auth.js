@@ -56,6 +56,23 @@ router.post("/signup", (req, res, next) => {
 
     newUser.save()
     .then(() => {
+      // async email
+      // jwt.sign(
+      //   {
+      //     user: _.pick(user, 'id'),
+      //   },
+      //   EMAIL_SECRET,
+      //   {
+      //     expiresIn: '1d',
+      //   },
+      //   (err, emailToken) => {
+      //     const url = `http://localhost:3000/confirmation/${emailToken}`;
+
+      //     transporter.sendMail({
+      //       to: args.email,
+      //     });
+      //   },
+      // );
       let transporter = nodemailer.createTransport({
         service: 'Gmail',
         auth: {
@@ -68,12 +85,15 @@ router.post("/signup", (req, res, next) => {
       transporter.sendMail({
         from: '"2-CoWork 👻" <2coworkiron@gmail.com>',
         to: email, 
-        subject: 'Confirm', 
+        // to: args.email,
+        subject: 'Confirm email', 
         text: '',
-        html: `<b>${'To confirm your email just smile to the sky!'}</b>`
+        html: `Please click this email to confirm your email:`,
+        //  <a href="${url}">${url}</a>`,
       })
-      //TODO: send the email 
-      
+
+            
+    // Send the email 
     //   newUser.save()
     // .then(() => {
     //   req.login(newUser, () => {
