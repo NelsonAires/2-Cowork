@@ -19,9 +19,21 @@ router.get('/all-coworks', (req, res, next) => {
     })
 });
 
-router.get('/see-detail', (req, res, next) => {
-  res.render('see-detail');
+router.get('/cowork-detail', (req, res, next) => {
+  res.render('cowork-detail');
 }); 
+
+
+/* Book detail page without editor
+router.get('/books/:bookId', (req,res,next) => {
+console.log("The id is", req.params.bookId)
+Book.findById(req.params.bookId)
+.then(bookFromDb => {
+res.render('book-detail', {
+book: bookFromDb
+})
+})
+}) */
 
 router.get('/signed-up', (req, res, next) => {
   res.render('signed-up');
