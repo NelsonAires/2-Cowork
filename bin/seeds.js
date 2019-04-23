@@ -474,16 +474,13 @@ User.deleteMany()
   mongoose.disconnect()
   throw err
 })
-console.log('loli1')
 Coworks.deleteMany()
 .then(() => {
-  console.log('loli2')
   Coworks.create(coworks)
   .then(() => {
     // Close properly the connection to Mongoose
     mongoose.disconnect()
   })
-  console.log('loli3')
 })
 .catch(err => {
   mongoose.disconnect()
