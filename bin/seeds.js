@@ -36,10 +36,7 @@ let coworks = [
   //1
   { 
     name: 'Cowork Central Cais do Sodré',
-    adress: {
-      street:"Praça Duque da Terceira, Lisbon, Portugal",
-      number:'24',
-    },
+    address: "Praça Duque da Terceira, 24, Lisbon, Portugal",
     email:'caisdosodre@gmail.com',
     website:'https://www.caisdosodre.com',
     images:'url:https://www.google.com/url?sa=i&source=images&cd=&cad=rja&uact=8&ved=2ahUKEwjU0JbcoeThAhVTBWMBHTqlC2MQjRx6BAgBEAU&url=https%3A%2F%2Fwww.timeout.pt%2Flisboa%2Fpt%2Fcoisas-para-fazer%2Fespacos-de-cowork-em-lisboa-para-trabalhar-em-comunidade&psig=AOvVaw3PgpbFjOyuWX4jjOfE4HYD&ust=1556041831146444',
@@ -60,10 +57,7 @@ let coworks = [
 //2
   { 
     name: 'The Sea Office',
-    adress: {
-      street:"Praça Duque da Terceira, Lisbon, Portugal",
-      number:'24',
-    },
+    address: "Praça Duque da Terceira, 24 Lisbon, Portugal",
     email:'theseaoffice@gmail.com',
     website:'https://www.caisdosodre.com',
     images:'url:https://www.google.com/url?sa=i&source=images&cd=&cad=rja&uact=8&ved=2ahUKEwikrtryoeThAhWO1uAKHeaJD10QjRx6BAgBEAU&url=http%3A%2F%2Fgoocoworking.com.br%2Fhome-sobre%2F&psig=AOvVaw3PgpbFjOyuWX4jjOfE4HYD&ust=1556041831146444',
@@ -84,10 +78,7 @@ let coworks = [
     //3
   { 
     name: 'Impact Hub Lisbon',
-    adress: {
-      street:"Rua 1º de Maio, Museu Carris, Lisbon, Portugal",
-      number:'213'
-    },
+    address: "Rua 1º de Maio, 213, Museu Carris, Lisbon, Portugal",
     email:'impacthublisbon@gmail.com',
     website:'https://www.caisdosodre.com',
     images:'url:https://www.google.com/url?sa=i&source=images&cd=&cad=rja&uact=8&ved=2ahUKEwikrtryoeThAhWO1uAKHeaJD10QjRx6BAgBEAU&url=http%3A%2F%2Fgoocoworking.com.br%2Fhome-sobre%2F&psig=AOvVaw3PgpbFjOyuWX4jjOfE4HYD&ust=1556041831146444',
@@ -108,10 +99,7 @@ let coworks = [
   //4
   { 
     name: 'SITIO Alvalade',
-    adress: {
-      street:"Rua João Saraiva, Lisbon, Portugal",
-      number:'34'
-    },
+    address: "Rua João Saraiva, 34, Lisbon, Portugal",
     email:'sitioalvalade@gmail.com',
     website:'https://www.caisdosodre.com',
     images:'url:https://www.google.com/url?sa=i&source=images&cd=&cad=rja&uact=8&ved=2ahUKEwijo82jpOThAhUJWxoKHXuyAPQQjRx6BAgBEAU&url=https%3A%2F%2Fwww.lifegate.com%2Fpeople%2Flifestyle%2Flisbon-second-home-coworking-space&psig=AOvVaw3PgpbFjOyuWX4jjOfE4HYD&ust=1556041831146444',
@@ -132,10 +120,7 @@ let coworks = [
   //5////////////
   { 
     name: 'Unicorn Liberdade',
-    adress: {
-      street:"Avenida da Liberdade, Lisboa, Portugal",
-      number:'10'
-    },
+    address: "Avenida da Liberdade, 10, Lisboa, Portugal",
     email:'unicorn@gmail.com',
     website:'https://www.caisdosodre.com',
     images:'url:https://www.google.com/url?sa=i&source=images&cd=&cad=rja&uact=8&ved=2ahUKEwikrtryoeThAhWO1uAKHeaJD10QjRx6BAgBEAU&url=http%3A%2F%2Fgoocoworking.com.br%2Fhome-sobre%2F&psig=AOvVaw3PgpbFjOyuWX4jjOfE4HYD&ust=1556041831146444',
@@ -156,10 +141,7 @@ let coworks = [
 //6 
   { 
     name: 'Cowork Central Príncipe Real',
-    adress: {
-      street:"Rua da Alegria, 3rd floor, Lisbon, Portugal",
-      number:'122B'
-    },
+    address: "Rua da Alegria, 122B, Lisbon, Portugal",
     email:'@gmail.com',
     website:'https://www.coworkcentral.pt',
     images:'url: ',
@@ -180,10 +162,7 @@ let coworks = [
   //7
   { 
     name: 'Avila Spaces',
-    adress: {
-      street:"Av. República, Lisbon, Portugal",
-      number:'6'
-    },
+    address: "Av. República, 6, Lisbon, Portugal",
     email:'@gmail.com',
     website:'https://www.coworkcentral.pt',
     images:'url: ',
@@ -204,10 +183,7 @@ let coworks = [
   //8
   { 
     name: 'IDEIA Parque das Nações',
-    adress: {
-      street:"Av. D. João II, Lisbon, Portugal",
-      number:'nº35 , 11th floor'
-    },
+    address: "Av. D. João II, 35, Lisbon, Portugal",
     email:'@gmail.com',
     website:'https://www.coworkcentral.pt',
     images:'url: ',
@@ -228,10 +204,7 @@ let coworks = [
   //9 
   { 
     name: 'Espaço 3D',
-    adress: {
-      street:"Rua Braamcamp, Lisbon, Portugal",
-      number:'nº84 , 3rd floor'
-    },
+    address: "Rua Braamcamp, 84, Lisbon, Portugal",
     email:'@gmail.com',
     website:'https://www.coworkcentral.pt',
     images:'url: ',
@@ -252,10 +225,7 @@ let coworks = [
   //10 
   { 
     name: 'IDEIA Palácio Sottomayor',
-    adress: {
-      street:"Avenida Fontes Pereira de Melo, Lisbon, Portugal",
-      number:'16'
-    },
+    address: "Avenida Fontes Pereira de Melo, 16, Lisbon, Portugal",
     email:'@gmail.com',
     website:'https://www.coworkcentral.pt',
     images:'url: ',
@@ -276,10 +246,7 @@ let coworks = [
   //11
   { 
     name: 'Coworklisboa',
-    adress: {
-      street:" Rua Rodrigues Faria, Lisbon, Portugal",
-      number:'103 LxFactory - Edifício I - 4º Andar '
-    },
+    address: "Rua Rodrigues Faria, 103, Lisbon, Portugal",
     email:'@gmail.com',
     website:'https://www.coworkcentral.pt',
     images:'url: ',
@@ -300,10 +267,7 @@ let coworks = [
   //12
   { 
     name: 'Workup',
-    adress: {
-      street:"Rua Tomás da Fonseca, Lisbon, Portugal",
-      number:'40A'
-    },
+    address: "Rua Tomás da Fonseca, 40A, Lisbon, Portugal",
     email:'@gmail.com',
     website:'https://www.coworkcentral.pt',
     images:'url: ',
@@ -324,10 +288,7 @@ let coworks = [
   //13
   { 
     name: 'House of Maria Amalia',
-    adress: {
-      street:"Rua Padre Luís Aparício, Lisbon, Portugal",
-      number:'9, 6th floor'
-    },
+    address: "Rua Padre Luís Aparício, 9, Lisbon, Portugal",
     email:'@gmail.com',
     website:'https://www.coworkcentral.pt',
     images:'url: ',
@@ -348,10 +309,7 @@ let coworks = [
   //14
   { 
     name: 'BWORKING SPACE',
-    adress: {
-      street:"Rua Latino Coelho, store, Lisbon, Portugal",
-      number:'13A'
-    },
+    address: "Rua Latino Coelho, 13A, Lisbon, Portugal",
     email:'@gmail.com',
     website:'https://www.coworkcentral.pt',
     images:'url: ',
@@ -372,10 +330,7 @@ let coworks = [
   //15
   { 
     name: 'Garagem Infinita',
-    adress: {
-      street:"Rua Damasceno Monteiro, Lisbon, Portugal",
-      number:'110D'
-    },
+    address: "Rua Damasceno Monteiro, 110D, Lisbon, Portugal",
     email:'@gmail.com',
     website:'https://www.coworkcentral.pt',
     images:'url: ',
@@ -396,10 +351,7 @@ let coworks = [
   //16
   { 
     name: 'WIP Lisboa',
-    adress: {
-      street:"Rua São Bento, Lisbon, Portugal",
-      number:'31'
-    },
+    address: "Rua São Bento, 31, Lisbon, Portugal",
     email:'@gmail.com',
     website:'https://www.coworkcentral.pt',
     images:'url: ',
@@ -420,10 +372,7 @@ let coworks = [
   //17
   { 
     name: 'The Block Cafe',
-    adress: {
-      street:"Rua Latino Coelho, 1, Lisbon, Portugal",
-      number:'63'
-    },
+    address: "Rua Latino Coelho, 63, Lisbon, Portugal",
     email:'@gmail.com',
     website:'https://www.coworkcentral.pt',
     images:'url: ',
@@ -444,10 +393,7 @@ let coworks = [
   //18
   { 
     name: 'Entrepreneur Houses',
-    adress: {
-      street:"Rua dos lirios, Amora, Lisbon, Portugal",
-      number:'271'
-    },
+    address: "Rua dos lirios, 271, Amora, Lisbon, Portugal",
     email:'@gmail.com',
     website:'https://www.coworkcentral.pt',
     images:'url: ',
@@ -468,10 +414,7 @@ let coworks = [
   //19
   { 
     name: 'BECO',
-    adress: {
-      street:"Rua da Madalena, Lisbon, Portugal",
-      number:'214'
-    },
+    address: "Rua da Madalena, Lisbon, 214, Portugal",
     email:'@gmail.com',
     website:'https://www.coworkcentral.pt',
     images:'url: ',
@@ -492,10 +435,7 @@ let coworks = [
   //20
   { 
     name: 'Village Underground',
-    adress: {
-      street:"Rua 1º de Maio, Lisbon, Portugal",
-      number:'103'
-    },
+    address: "Rua 1º de Maio, 103, Lisbon, Portugal",
     email:'@gmail.com',
     website:'https://www.coworkcentral.pt',
     images:'url: ',
