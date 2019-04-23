@@ -17,7 +17,19 @@ router.get('/all-coworks', (req, res, next) => {
 
 router.get('/see-detail', (req, res, next) => {
   res.render('see-detail');
+<<<<<<< HEAD
 });
+=======
+}); 
+
+router.get('/signed-up', (req, res, next) => {
+  res.render('signed-up');
+}); 
+
+
+
+
+>>>>>>> 285b47317399ffbac74f652339c51dbfe493d521
 
 
 
