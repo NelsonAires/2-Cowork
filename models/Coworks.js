@@ -4,10 +4,7 @@ const Schema   = mongoose.Schema;
 const coworksSchema = new Schema({
   name: {
     type: String, required:true, unique:true},
-    adress: [{
-      street: {type: String, required:true},
-      number: {type: String, required:true} 
-    }],
+  address: String,
   email: String,
   website: String,
   images: String,
