@@ -7,7 +7,7 @@ router.get('/', (req, res, next) => {
 });
 
 
-/* router.get('/add-space', (req, res, next) => {
+router.get('/add-space', (req, res, next) => {
   res.render('add-space');
 });
 
@@ -17,7 +17,7 @@ router.get('/all-coworks', (req, res, next) => {
 
 router.get('/see-detail', (req, res, next) => {
   res.render('see-detail');
-}); */
+});
 
 
 
