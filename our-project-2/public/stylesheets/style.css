@@ -1,3 +1,11 @@
+nav{
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  background-color: whitesmoke;
+
+}
+
 body {
   padding: 50px;
   font: 14px "Lucida Grande", Helvetica, Arial, sans-serif; }
