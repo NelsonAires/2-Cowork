@@ -4,7 +4,21 @@ body {
 a {
   color: #00B7FF; }
 
+nav {
+  display: flex;
+  justify-content: space-evenly; }
+
+.card {
+  display: inline-block;
+  padding-top: 1%;
+  padding-left: 1%;
+  border: 1px solid black; }
+
+.card-img-top {
+  width: 90%;
+  height: 90%; }
+
 .bg-light-2 {
-  background-color: #83ceb5; }
+  background-color: #a8e1ce; }
 
 /*# sourceMappingURL=style.css.map */
