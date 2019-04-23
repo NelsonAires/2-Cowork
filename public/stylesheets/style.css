@@ -4,12 +4,10 @@ body {
 a {
   color: #00B7FF; }
 
-.bg-light-2 {
-  background-color: #83ceb5; }
-
-.container {
-  height: 500px;
-  width: 500px; }
+nav {
+  display: flex;
+  justify-content: space-evenly;
+  background-color: azure; }
 
 .card {
   display: inline-block;
@@ -20,5 +18,8 @@ a {
 .card-img-top {
   width: 90%;
   height: 90%; }
+
+.bg-light-2 {
+  background-color: #83ceb5; }
 
 /*# sourceMappingURL=style.css.map */
