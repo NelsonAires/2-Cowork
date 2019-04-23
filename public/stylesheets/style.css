@@ -10,4 +10,14 @@ nav {
   justify-content: space-evenly;
   background-color: azure; }
 
+.card {
+  display: inline-block;
+  padding-top: 1%;
+  padding-left: 1%;
+  border: 1px solid black; }
+
+.card-img-top {
+  width: 90%;
+  height: 90%; }
+
 /*# sourceMappingURL=style.css.map */
