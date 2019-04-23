@@ -19,8 +19,11 @@ router.get('/all-coworks', (req, res, next) => {
     })
 });
 
-router.get('/cowork-detail', (req, res, next) => {
-  res.render('cowork-detail');
+router.get('/cowork-detail/:coworkId', (req, res, next) => {
+  Coworks.findById(req.params.coworkId)
+  .then(cowork => {
+    res.render('cowork-detail', {cowork});
+  })
 }); 
 
 
