@@ -1,5 +1,5 @@
 body {
-  padding: 50px;
+
   font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
 }
 
@@ -7,6 +7,7 @@ a {
   color: #00B7FF;
 }
 
+<<<<<<< HEAD
 nav {
   display: flex;
   justify-content: space-evenly;
@@ -33,4 +34,20 @@ nav {
   width: 90%;
   height: 90%;
   
+=======
+.bg-light-2{
+  background-color: rgb(131, 206, 181);
+}
+
+// nav{
+//   display: flex;
+//   justify-content: space-evenly;  
+//   background-color: azure;
+// }
+
+.container{
+  height: 500px;
+  width: 500px;
+
+>>>>>>> 423a7d1ebf3c534ce083aeb9654a7bda257bddc1
 }
