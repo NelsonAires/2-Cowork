@@ -1,25 +1,35 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-      <script src='https://static-assets.mapbox.com/gl-pricing/dist/mapbox-gl.js'></script>
-      <link href='https://api.mapbox.com/mapbox-gl-js/v0.53.0/mapbox-gl.css' rel='stylesheet'/>
-    <title>2Cowork</title>
-      <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
-      <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-      <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
-      <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
-      <link rel="stylesheet" href="style.css">
-     <style>
-        #map{
-            height: 300px;
-        }
-    </style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <script src='https://static-assets.mapbox.com/gl-pricing/dist/mapbox-gl.js'></script>
+  <link href='https://api.mapbox.com/mapbox-gl-js/v0.53.0/mapbox-gl.css' rel='stylesheet' />
+  <title>2Cowork</title>
+
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css"
+    integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+    crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js"
+    integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js"
+    integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k"
+    crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="../stylesheets/style.scss">
+  <style>
+    #map {
+      height: 300px;
+    }
+  </style>
 </head>
+
 <body>
-    {{!-- <nav>
+  {{!-- <nav>
     <a href="/">Home</a>
     {{#if isConnected }}
       <a href="/auth/logout">Logout</a>
@@ -30,221 +40,225 @@
 
   </nav> --}}
 
-  <!---------NAV--------->
-  <nav>
-    <div class="site-branding col-sm-4">
-			<h1 class="site-title">2Cowork</h1>
-  </div>
-    <ul class="nav justify-content-center">
-      <li class="nav-item">
-        <a class="nav-link active" href="/"> Home</a>
-           
-    {{#if isConnected }}
-     <li class="nav-item"></li>
-      <a class="nav-link"  href="/auth/logout">Logout</a></li>
-    {{else}}
-    <li class="nav-item">
-      <a class="nav-link" href="/auth/login">Login</a></li>
-      <li class="nav-item">
-      <a class="nav-link" href="/auth/signup">Signup</a></li>
-    {{/if}}
-        </a>
-      </li>
-    
-      <li class="nav-item">
-        <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true"></a>
-      </li>
-      </ul>
-
-    </nav>
-    <!-------------CAROUSEL-------------->
-    <div>
-      <div id="carouselExampleFade" class="carousel slide carousel-fade" data-ride="carousel">
-        <div class="carousel-inner">
-          <div class="carousel-item active">
-            <img src="./img/slider-1.jpg" class="d-block w-100" alt="...">
-          </div>
-          <div class="carousel-item">
-            <img src="./img/slider-2.jpg" class="d-block w-100" alt="...">
-          </div>
-          <div class="carousel-item">
-            <img src="img/slider-3.jpg" class="d-block w-100" alt="...">
-          </div>
-          <div class="carousel-item">
-            <img src="img/slider-4.jpg" class="d-block w-100" alt="...">
-          </div>
-        </div>
-        <a class="carousel-control-prev" href="#carouselExampleFade" role="button" data-slide="prev">
-          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-          <span class="sr-only">Previous</span>
-        </a>
-        <a class="carousel-control-next" href="#carouselExampleFade" role="button" data-slide="next">
-          <span class="carousel-control-next-icon" aria-hidden="true"></span>
-          <span class="sr-only">Next</span>
-        </a>
+  <nav class="navbar navbar-light bg-light-2">
+    <a class="navbar-brand" href="/">
+      <img src="/images/logo-01.png" width="150" alt=""> <!--LOGO-->
+    </a>
+    <!------NAV 1 DTA------->
+    <nav class="navbar navbar-expand-lg navbar-light">
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav">
+          {{#if isConnected }}
+          <li class="nav-item">
+            <a class="nav-link" href="/auth/logout">Logout</a>
+          </li>
+          {{else}}
+          <li class="nav-item">
+            <a class="nav-link" href="/all-coworks">Coworks</a></li>
+          <li class="nav-item">
+          <li class="nav-item">
+            <a class="nav-link" href="/auth/login">Login</a></li>
+          <li class="nav-item">
+            <a class="nav-link" href="/auth/signup">Signup</a></li>
+          <li class="nav-item">
+            <a class="nav-link" href="/add-space">Add Space</a></li>
+          {{/if}}
+          <li class="nav-item">
+            <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true"></a>
+          </li>
+        </ul>
       </div>
-    </div>
+    </nav>
 
-<div id='map'></div>
-<script>
+  </nav>
+  <!-------------CAROUSEL-------------->
+  
+    <div id="carouselExampleFade" class="carousel slide carousel-fade" data-ride="carousel">
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img src="/images/1_1.jpg" class="d-block w-100" alt="jpgggggg">
+        </div>
+        <div class="carousel-item">
+          <img src="/images/2_2.jpg" class="d-block w-100" alt="...">
+        </div>
+        <div class="carousel-item">
+          <img src="/images/3_3.jpg" class="d-block w-100" alt="...">
+        </div>
+      </div>
+      <a class="carousel-control-prev" href="#carouselExampleFade" role="button" data-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="sr-only">Previous</span>
+      </a>
+      <a class="carousel-control-next" href="#carouselExampleFade" role="button" data-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="sr-only">Next</span>
+      </a>
+    </div>
+  
+  <div id='map'></div>
+  <script>
     mapboxgl.accessToken = 'pk.eyJ1Ijoic29maWFvIiwiYSI6ImNqdWwxZXdqZDA2c3QzeW81YmtpNHN2eTAifQ.eEz8uoeY77tN7lOzpxgBFg';
 
-//Embed a map in a tag with the id `map`
-var map = new mapboxgl.Map({
-    container: 'map',
-    style: 'mapbox://styles/sofiao/cjutmyam904g81fmxl9acdlg1',
-    center: [-9.1527, 38.7108], // starting position
-    zoom: 10 // starting zoom
-  });
+    //Embed a map in a tag with the id `map`
+    var map = new mapboxgl.Map({
+      container: 'map',
+      style: 'mapbox://styles/sofiao/cjutmyam904g81fmxl9acdlg1',
+      center: [-9.1527, 38.7108], // starting position
+      zoom: 10 // starting zoom
+    });
 
-  // Add zoom and rotation controls to the map.
-map.addControl(new mapboxgl.NavigationControl(), 'bottom-right');
+    // Add zoom and rotation controls to the map.
+    map.addControl(new mapboxgl.NavigationControl(), 'bottom-right');
 
-//Add a marker
-//1
-var marker = new mapboxgl.Marker({
-    draggable: true, 
-    color: 'red'
-})
-  .setLngLat([-9.1452867, 38.7066134])
-  .addTo(map);
-//2
-  var newMarker = new mapboxgl.Marker({
-    draggable: true, 
-    color: 'red'
-})
-  .setLngLat([-9.23665819,38.6469761])
-  .addTo(map);
-//Change from here
-//3
-var marker = new mapboxgl.Marker({
-    draggable: true, 
-    color: 'red'
-})
-  .setLngLat([-9.1828413, 38.7020686])
-  .addTo(map);
-//4
-var marker = new mapboxgl.Marker({
-    draggable: true, 
-    color: 'red'
-})
-  .setLngLat([-9.1432403,38.7565371])
-  .addTo(map);
-//5
-var marker = new mapboxgl.Marker({
-    draggable: true, 
-    color: 'red'
-})
-  .setLngLat([-9.14405, 38.7166599])
-  .addTo(map);
-//6
-var marker = new mapboxgl.Marker({
-    draggable: true, 
-    color: 'red'
-})
-  .setLngLat([-9.1497635,17, 38.7172234])
-  .addTo(map);
-//7
-var marker = new mapboxgl.Marker({
-    draggable: true, 
-    color: 'red'
-})
-  .setLngLat([-9.1470209, 38.7348591])
-  .addTo(map);
-//8
-var marker = new mapboxgl.Marker({
-    draggable: true, 
-    color: 'red'
-})
-  .setLngLat([-9.100224, 38.7702102])
-  .addTo(map);
-//9
-  var marker = new mapboxgl.Marker({
-    draggable: true, 
-    color: 'red'
-})
-  .setLngLat([-9.1548361, 38.7216649])
-  .addTo(map);
-//10
-  var marker = new mapboxgl.Marker({
-    draggable: true, 
-    color: 'red'
-})
-  .setLngLat([-9.1495605, 38.728708])
-  .addTo(map);
-//11
-var marker = new mapboxgl.Marker({
-    draggable: true, 
-    color: 'red'
-})
-  .setLngLat([-9.1807824,38.702878])
-  .addTo(map);
-//12
-var marker = new mapboxgl.Marker({
-    draggable: true, 
-    color: 'red'
-})
-  .setLngLat([-9.1692683, 38.755383])
-  .addTo(map);
-//13
-var marker = new mapboxgl.Marker({
-    draggable: true, 
-    color: 'red'
-})
-  .setLngLat([-9.1451212, 38.7249888])
-  .addTo(map);
-//14
-var marker = new mapboxgl.Marker({
-    draggable: true, 
-    color: 'red'
-})
-  .setLngLat([-9.1500005, 38.7321525])
-  .addTo(map);
-//15
-var marker = new mapboxgl.Marker({
-    draggable: true, 
-    color: 'red'
-})
-  .setLngLat([-9.1337696, 38.7212756])
-  .addTo(map);
-//16
-var marker = new mapboxgl.Marker({
-    draggable: true, 
-    color: 'red'
-})
-  .setLngLat([-9.1549633, 38.7107974])
-  .addTo(map);
-//17
-var marker = new mapboxgl.Marker({
-    draggable: true, 
-    color: 'red'
-})
-  .setLngLat([-9.1491892, 38.7317572])
-  .addTo(map);
-//18
-var marker = new mapboxgl.Marker({
-    draggable: true, 
-    color: 'red'
-})
-  .setLngLat([-9.1485324, 38.5979802])
-  .addTo(map);
-//19
-var marker = new mapboxgl.Marker({
-    draggable: true, 
-    color: 'red'
-})
-  .setLngLat([-9.1385534, 38.7132222])
-  .addTo(map);
-//20
-var marker = new mapboxgl.Marker({
-    draggable: true, 
-    color: 'red'
-})
-  .setLngLat([-9.1836484, 38.7013927])
-  .addTo(map);
+    //Add a marker
+    //1
+    var marker = new mapboxgl.Marker({
+      draggable: true,
+      color: 'red'
+    })
+      .setLngLat([-9.1452867, 38.7066134])
+      .addTo(map);
+    //2
+    var newMarker = new mapboxgl.Marker({
+      draggable: true,
+      color: 'red'
+    })
+      .setLngLat([-9.23665819, 38.6469761])
+      .addTo(map);
+    //Change from here
+    //3
+    var marker = new mapboxgl.Marker({
+      draggable: true,
+      color: 'red'
+    })
+      .setLngLat([-9.1828413, 38.7020686])
+      .addTo(map);
+    //4
+    var marker = new mapboxgl.Marker({
+      draggable: true,
+      color: 'red'
+    })
+      .setLngLat([-9.1432403, 38.7565371])
+      .addTo(map);
+    //5
+    var marker = new mapboxgl.Marker({
+      draggable: true,
+      color: 'red'
+    })
+      .setLngLat([-9.23665819, 38.6469761])
+      .addTo(map);
+    //6
+    var marker = new mapboxgl.Marker({
+      draggable: true,
+      color: 'red'
+    })
+      .setLngLat([-9.1497635, 17, 38.7172234])
+      .addTo(map);
+    //7
+    var marker = new mapboxgl.Marker({
+      draggable: true,
+      color: 'red'
+    })
+      .setLngLat([-9.1470209, 38.7348591])
+      .addTo(map);
+    //8
+    var marker = new mapboxgl.Marker({
+      draggable: true,
+      color: 'red'
+    })
+      .setLngLat([-9.100224, 38.7702102])
+      .addTo(map);
+    //9
+    var marker = new mapboxgl.Marker({
+      draggable: true,
+      color: 'red'
+    })
+      .setLngLat([-9.1548361, 38.7216649])
+      .addTo(map);
+    //10
+    var marker = new mapboxgl.Marker({
+      draggable: true,
+      color: 'red'
+    })
+      .setLngLat([-9.1495605, 38.728708])
+      .addTo(map);
+    //11
+    var marker = new mapboxgl.Marker({
+      draggable: true,
+      color: 'red'
+    })
+      .setLngLat([-9.1807824, 38.702878])
+      .addTo(map);
+    //12
+    var marker = new mapboxgl.Marker({
+      draggable: true,
+      color: 'red'
+    })
+      .setLngLat([-9.1692683, 38.755383])
+      .addTo(map);
+    //13
+    var marker = new mapboxgl.Marker({
+      draggable: true,
+      color: 'red'
+    })
+      .setLngLat([-9.1451212, 38.7249888])
+      .addTo(map);
+    //14
+    var marker = new mapboxgl.Marker({
+      draggable: true,
+      color: 'red'
+    })
+      .setLngLat([-9.1500005, 38.7321525])
+      .addTo(map);
+    //15
+    var marker = new mapboxgl.Marker({
+      draggable: true,
+      color: 'red'
+    })
+      .setLngLat([-9.1337696, 38.7212756])
+      .addTo(map);
+    //16
+    var marker = new mapboxgl.Marker({
+      draggable: true,
+      color: 'red'
+    })
+      .setLngLat([-9.1549633, 38.7107974])
+      .addTo(map);
+    //17
+    var marker = new mapboxgl.Marker({
+      draggable: true,
+      color: 'red'
+    })
+      .setLngLat([-9.1491892, 38.7317572])
+      .addTo(map);
+    //18
+    var marker = new mapboxgl.Marker({
+      draggable: true,
+      color: 'red'
+    })
+      .setLngLat([-9.1485324, 38.5979802])
+      .addTo(map);
+    //19
+    var marker = new mapboxgl.Marker({
+      draggable: true,
+      color: 'red'
+    })
+      .setLngLat([-9.1385534, 38.7132222])
+      .addTo(map);
+    //20
+    var marker = new mapboxgl.Marker({
+      draggable: true,
+      color: 'red'
+    })
+      .setLngLat([-9.1836484, 38.7013927])
+      .addTo(map);
 
-
-</script>
+  </script>
 
 </body>
+
 </html>
