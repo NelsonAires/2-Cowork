@@ -1,1 +1,43 @@
 <h1>Add/List your space</h1>
+
+  <nav>
+  <div class="site-branding col-sm-4">
+			<h1 class="site-title">2Cowork</h1>
+  </div>
+    <ul class="nav justify-content-center">
+    {{#if isConnected }}
+     <li class="nav-item"></li>
+      <a class="nav-link"  href="/auth/logout">Logout</a></li>
+    {{else}}
+    <li class="nav-item">
+      <a class="nav-link" href="/auth/login">Login</a></li>
+      <li class="nav-item">
+      <a class="nav-link" href="/auth/signup">Signup</a></li>
+    {{/if}}
+        </a>
+        <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true"></a>
+      </li>
+    </ul>
+
+    </nav>
+
+    <h1>List your space</h1>
+{{!---Send the data to POST /create-space-----}}
+<form action="/create-space" method="post">
+Name: 
+<input type="text" name="name" class="form-control"> <br>
+Address: 
+<input type="text" name="address" class="form-control"> </input><br>
+Description: 
+<textarea name="description" class="form-control"> </textarea><br>
+Amenities: 
+<input type="text" name="amenities" class="form-control"> </input><br>
+Prices:
+<input type="text" name="prices" class="form-control"> </input><br>
+
+Opening hours: 
+<input type="text" name="hours" class="form-control"> </input><br>
+
+
+<button type="submit" class="btn btn-primary">List!</button>
+</form>

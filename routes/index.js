@@ -19,6 +19,15 @@ router.get('/see-detail', (req, res, next) => {
   res.render('see-detail');
 }); 
 
+router.get('/signed-up', (req, res, next) => {
+  res.render('signed-up');
+}); 
+
+
+
+
+
+
 
 
 

@@ -4,15 +4,11 @@ body {
 a {
   color: #00B7FF; }
 
+.bg-light-2 {
+  background-color: #83ceb5; }
+
 .container {
   height: 500px;
   width: 500px; }
 
-  .bg-light-2{
-    background-color: rgb(183, 249, 227);
-  }
-
-  .navbar-light .navbar-nav .nav-link{
-    color: blueviolet;
-  }
 /*# sourceMappingURL=style.css.map */
