@@ -1,4 +1,7 @@
-@import '../../node_modules/bootstrap/scss/bootstrap.scss';
+
+// $primary : black; //para a cor primária na nav-bar . $primary . Tem de ser defenida primeiro.
+
+// @import '../../node_modules/bootstrap/scss/bootstrap.scss';
 
 body {
   font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
@@ -11,7 +14,6 @@ a {
 nav {
   display: flex;
   justify-content: space-evenly;
-
 }
 
 // .container {
@@ -34,7 +36,6 @@ nav {
   width: 90%;
   height: 90%;
 }
-
   
 .bg-light-2{
   background-color: rgb(168, 225, 206);
