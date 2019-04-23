@@ -36,10 +36,10 @@ let coworks = [
   //1
   { 
     name: 'Cowork Central Cais do Sodré',
-    adress: {
+    adress: [{
       street:"Praça Duque da Terceira, Lisbon, Portugal",
       number:'24',
-    },
+    }],
     email:'caisdosodre@gmail.com',
     website:'https://www.caisdosodre.com',
     images:'url:https://www.google.com/url?sa=i&source=images&cd=&cad=rja&uact=8&ved=2ahUKEwjU0JbcoeThAhVTBWMBHTqlC2MQjRx6BAgBEAU&url=https%3A%2F%2Fwww.timeout.pt%2Flisboa%2Fpt%2Fcoisas-para-fazer%2Fespacos-de-cowork-em-lisboa-para-trabalhar-em-comunidade&psig=AOvVaw3PgpbFjOyuWX4jjOfE4HYD&ust=1556041831146444',
