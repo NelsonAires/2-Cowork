@@ -41,8 +41,14 @@ nav {
   background-color: rgb(168, 225, 206);
 }
 
-.container-carousel{
-  
-  height: 500px;
+.carousel{
+  // box-sizing: content-box;
+  height: 100%;
   width: 100%;
+}
+
+footer{
+  height: 200px;
+  background-color: rgb(216, 249, 238);
+  
 }

@@ -21,8 +21,12 @@ nav {
 .bg-light-2 {
   background-color: #a8e1ce; }
 
-.container-carousel {
-  height: 500px;
+.carousel {
+  height: 100%;
   width: 100%; }
+
+footer {
+  height: 200px;
+  background-color: #d8f9ee; }
 
 /*# sourceMappingURL=style.css.map */
