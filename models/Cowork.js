@@ -1,7 +1,7 @@
 const mongoose = require('mongoose');
 const Schema   = mongoose.Schema;
 
-const coworksSchema = new Schema({
+const coworkSchema = new Schema({
   name: {
     type: String, required:true, unique:true},
   address: String,
@@ -23,5 +23,5 @@ const coworksSchema = new Schema({
   }],
 });
 
-const Coworks = mongoose.model('Coworks', coworksSchema);
-module.exports = Coworks;
+const Cowork = mongoose.model('Cowork', coworkSchema);
+module.exports = Cowork;
