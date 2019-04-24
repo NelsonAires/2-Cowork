@@ -7189,7 +7189,8 @@ footer {
   padding-top: 30px;
   height: 200px;
   background-color: #323232;
-  font: 16px "Lucida Grande", Helvetica, Arial, sans-serif; }
+  font: 16px "Lucida Grande", Helvetica, Arial, sans-serif;
+  margin-bottom: auto; }
 
 .foot-btn a {
   margin-left: 20px;
