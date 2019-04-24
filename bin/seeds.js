@@ -186,7 +186,7 @@ let coworks = [
     address: "Av. D. João II, 35, Lisbon, Portugal",
     email:'@gmail.com',
     website:'https://www.coworkcentral.pt',
-    images:'http://blog.coworkies.com/wp-content/uploads/2017/11/Coworklisboa_coworking.jpg',
+    images:'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRl7JOIYGOOuByNvc5ggq9O2Hi9Y7MmIfk23cY3Xw_--QhLqopm',
     description: 'N/A',
     amenities:{ 
       basics:['Wifi','Air-conditioning'],
@@ -207,7 +207,7 @@ let coworks = [
     address: "Rua Braamcamp, 84, Lisbon, Portugal",
     email:'@gmail.com',
     website:'https://www.coworkcentral.pt',
-    images:'https://static1.squarespace.com/static/56c77f73f699bb77fbd8e303/t/59de610e90badef7f4cfe669/1507746077917/houspace-lisbon-coworking',
+    images:'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSWbnoN0wFPn8OFxu4moJmyD0z43L770HIS0aIhbdWF2Oge7mXf4w',
     description: 'Come and meet the most interesting co-work community in Lisbon.We believe in balance and sustainability, that life is more than just work, that creative processes arise when least expected. We work passionately and are bind to something much bigger than us: helping entrepreneurs creating their dreams. We provide not just workspace, but also community and services that support forward-thinking people and companies.',
     amenities:{ 
       basics:['Wifi','Air-conditioning'],
@@ -228,7 +228,7 @@ let coworks = [
     address: "Avenida Fontes Pereira de Melo, 16, Lisbon, Portugal",
     email:'@gmail.com',
     website:'https://www.coworkcentral.pt',
-    images:'https://s3-us-west-2.amazonaws.com/wf-fileserver-sync/files/2018/08/213850-jRMjSUuQtqJZW3yHxWtX-IMG_20180827_222419-720x440.jpg',
+    images:'https://portugalstartups.com/wp-content/uploads/2016/02/impactHub_Amsterdam-1068x587.jpg',
     description: 'N/A',
     amenities:{ 
       basics:['Wifi','Air-conditioning'],
@@ -270,7 +270,7 @@ let coworks = [
     address: "Rua Tomás da Fonseca, 40A, Lisbon, Portugal",
     email:'@gmail.com',
     website:'https://www.coworkcentral.pt',
-    images:'https://www.travelinglifestyle.net/wp-content/uploads/2016/11/best-coworking-spaces-around-the-world-759x500.jpg',
+    images:'https://d2lgtvdb6hylu5.cloudfront.net/439bc45e66f52eb860b9a12bf7768cf9716af9d0/12379.560x398x0.jpg',
     description: 'Workup is an innovative Cowork concept that provides a workspace in the center of Lisbon, 5 minutes from the airport in a privileged location beside the university stadium, next to the golf Academy, very close to the Classical University and the Catholic University, on the same street where is one of the largest business area of ​​Lisbon, Torres de Lisboa, with an excellent location both for those who want to develop their academic work, professional or business activity.',
     amenities:{ 
       basics:['Wifi','Air-conditioning'],
@@ -291,7 +291,7 @@ let coworks = [
     address: "Rua Padre Luís Aparício, 9, Lisbon, Portugal",
     email:'@gmail.com',
     website:'https://www.coworkcentral.pt',
-    images:'https://www.lifegate.com/app/uploads/Second-Home-Lisboa-edited.png',
+    images:'https://assets-global.website-files.com/5a8dab23b7a50a0001e1ecc6/5b294df574d0a24be1b25e17_Remote%20Year%20Coworking%20Spaces.jpg',
     description: 'PET FRIENDLY COWORKING SPACE | LISBOA ',
     amenities:{ 
       basics:['Wifi','Air-conditioning'],
