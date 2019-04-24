@@ -7074,6 +7074,11 @@ footer {
   color: white;
   text-decoration: none; }
 
+  /* {background-color: #d8f9ee; } */
+
+.image-framework {
+  width: 50%; }
+
 :root {
   --input-padding-x: 1.5rem;
   --input-padding-y: .75rem; }

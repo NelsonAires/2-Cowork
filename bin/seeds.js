@@ -42,11 +42,11 @@ let coworks = [
     images:'http://blog.coworkies.com/wp-content/uploads/2017/11/Coworklisboa_coworking.jpg',
     description: 'Cowork Central is a hub for creative, independent minds situated bang in the heart of Lisbon. As well as desk and office space for freelancers, startups and small companies we provide a range of services with the goal of enabling you to focus on what’s most important: the success of your business.',
     amenities:{
-      basics:['Wifi','Air-conditioning'],
-      equipment:['Projector','Printer'],
-      facilities:['Kitchen','Personal lockers','Event Space For Rent'],
+      basics:['Wifi ','Air-conditioning'],
+      equipment:['Projector ','Printer'],
+      facilities:['Kitchen ','Personal lockers ','Event Space For Rent'],
       transportation:['5 Minute Walk From Public Transit'],
-      relax_zones:['Lounge', 'Rooftop'],
+      relax_zones:['Lounge ', 'Rooftop'],
     },
     prices:'EUR 12.50/per day',
     opening_hours: {
