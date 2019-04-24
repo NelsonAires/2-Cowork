@@ -7031,7 +7031,8 @@ nav {
   justify-content: space-evenly; }
 
 .container {
-  flex-direction: row !important; }
+  flex-direction: row !important;
+  text-align: center; }
 
 .account-message {
   text-align: center; }
@@ -7077,6 +7078,10 @@ footer {
 .foot-btn a:hover {
   color: white;
   text-decoration: none; }
+
+.foot-info {
+  padding: 30px;
+  text-align: center; }
 
 .image-framework {
   width: 50%; }
