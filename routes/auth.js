@@ -124,6 +124,10 @@ router.get("/logout", (req, res) => {
   res.redirect("/");
 });
 
+router.get("/signed-up", (req, res, next) => {
+  res.render("auth/signed-up")
+});
+
 router.get("/confirmation/:confirmationCode", (req, res) => {
   // TODO
   // Find the user with the confirmation code and make his status active
