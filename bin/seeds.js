@@ -39,7 +39,7 @@ let coworks = [
     address: "Praça Duque da Terceira, 24, Lisbon, Portugal",
     email:'caisdosodre@gmail.com',
     website:'https://www.caisdosodre.com',
-    images:'url:https://www.google.com/url?sa=i&source=images&cd=&cad=rja&uact=8&ved=2ahUKEwjU0JbcoeThAhVTBWMBHTqlC2MQjRx6BAgBEAU&url=https%3A%2F%2Fwww.timeout.pt%2Flisboa%2Fpt%2Fcoisas-para-fazer%2Fespacos-de-cowork-em-lisboa-para-trabalhar-em-comunidade&psig=AOvVaw3PgpbFjOyuWX4jjOfE4HYD&ust=1556041831146444',
+    images:'url:http://blog.coworkies.com/wp-content/uploads/2017/11/Coworklisboa_coworking.jpg',
     description: 'Cowork Central is a hub for creative, independent minds situated bang in the heart of Lisbon. As well as desk and office space for freelancers, startups and small companies we provide a range of services with the goal of enabling you to focus on what’s most important: the success of your business.',
     amenities:{
       basics:['Wifi','Air-conditioning'],
@@ -60,7 +60,7 @@ let coworks = [
     address: "Praça Duque da Terceira, 24 Lisbon, Portugal",
     email:'theseaoffice@gmail.com',
     website:'https://www.caisdosodre.com',
-    images:'url:https://www.google.com/url?sa=i&source=images&cd=&cad=rja&uact=8&ved=2ahUKEwikrtryoeThAhWO1uAKHeaJD10QjRx6BAgBEAU&url=http%3A%2F%2Fgoocoworking.com.br%2Fhome-sobre%2F&psig=AOvVaw3PgpbFjOyuWX4jjOfE4HYD&ust=1556041831146444',
+    images:'url:https://static1.squarespace.com/static/56c77f73f699bb77fbd8e303/t/59de610e90badef7f4cfe669/1507746077917/houspace-lisbon-coworking',
     description:'The Sea Office is located in Costa de Caparica, Portugal and it’s a combination of three: sleep, work and fun in the same place. You can work in a shared working space, take a nap in a restored 60’s villa and have fun by enjoying the possibilities that Costa de Caparica offers.',
     amenities:{
       basics:['Wifi','Air-conditioning'],
@@ -81,7 +81,7 @@ let coworks = [
     address: "Rua 1º de Maio, 213, Museu Carris, Lisbon, Portugal",
     email:'impacthublisbon@gmail.com',
     website:'https://www.caisdosodre.com',
-    images:'url:https://www.google.com/url?sa=i&source=images&cd=&cad=rja&uact=8&ved=2ahUKEwikrtryoeThAhWO1uAKHeaJD10QjRx6BAgBEAU&url=http%3A%2F%2Fgoocoworking.com.br%2Fhome-sobre%2F&psig=AOvVaw3PgpbFjOyuWX4jjOfE4HYD&ust=1556041831146444',
+    images:'url:https://s3-us-west-2.amazonaws.com/wf-fileserver-sync/files/2018/08/213850-jRMjSUuQtqJZW3yHxWtX-IMG_20180827_222419-720x440.jpg',
     description:'It’s a community, it’s a shared space, it’s an incubator and accelerator it’s all this focused in sustainability and social innovation. We are a global network of like minded people that uses our more than 100 spaces in the world to create social innovation.',
     amenities:{
       basics:['Wifi','Air-conditioning'],
@@ -102,7 +102,7 @@ let coworks = [
     address: "Rua João Saraiva, 34, Lisbon, Portugal",
     email:'sitioalvalade@gmail.com',
     website:'https://www.caisdosodre.com',
-    images:'url:https://www.google.com/url?sa=i&source=images&cd=&cad=rja&uact=8&ved=2ahUKEwijo82jpOThAhUJWxoKHXuyAPQQjRx6BAgBEAU&url=https%3A%2F%2Fwww.lifegate.com%2Fpeople%2Flifestyle%2Flisbon-second-home-coworking-space&psig=AOvVaw3PgpbFjOyuWX4jjOfE4HYD&ust=1556041831146444',
+    images:'url:https://www.bentosmb.com/wp-content/uploads/2018/06/IMG_4178.jpg',
     description:'With an excellent location in the Alvalade district, close to Lisbon Airport and the public transportation and access to the city, surrounded by all the necessary infrastructures, commerce and services',
     amenities:{
       basics:['Wifi','Air-conditioning'],
@@ -123,7 +123,7 @@ let coworks = [
     address: "Avenida da Liberdade, 10, Lisboa, Portugal",
     email:'unicorn@gmail.com',
     website:'https://www.caisdosodre.com',
-    images:'url:https://www.google.com/url?sa=i&source=images&cd=&cad=rja&uact=8&ved=2ahUKEwikrtryoeThAhWO1uAKHeaJD10QjRx6BAgBEAU&url=http%3A%2F%2Fgoocoworking.com.br%2Fhome-sobre%2F&psig=AOvVaw3PgpbFjOyuWX4jjOfE4HYD&ust=1556041831146444',
+    images:'url:https://www.travelinglifestyle.net/wp-content/uploads/2016/11/best-coworking-spaces-around-the-world-759x500.jpg',
     description:'Fully serviced workspaces in the heart of Lisbon.From a receptionist, coffee, filtered water, fruits, cleaning, janitor service and more are all included in the rent. Let us take care of running your office.Private offices, flex or fixed desks. Whether you are in need of a single team office, a desk for a day, month or year. We can accommodate all your needs.',
     amenities:{
       basics:['Wifi','Air-conditioning'],
@@ -144,7 +144,7 @@ let coworks = [
     address: "Rua da Alegria, 122B, Lisbon, Portugal",
     email:'@gmail.com',
     website:'https://www.coworkcentral.pt',
-    images:'url: ',
+    images:'url: https://www.lifegate.com/app/uploads/Second-Home-Lisboa-edited.png',
     description: 'Cowork Central is a hub for creative, independent minds situated bang in the heart of Lisbon. As well as desk and office space for freelancers, startups and small companies we provide a range of services with the goal of enabling you to focus on what’s most important: the success of your business.',
     amenities:{ 
       basics:['Wifi','Air-conditioning'],
@@ -165,7 +165,7 @@ let coworks = [
     address: "Av. República, 6, Lisbon, Portugal",
     email:'@gmail.com',
     website:'https://www.coworkcentral.pt',
-    images:'url: ',
+    images:'url:https://www.officelovin.com/wp-content/uploads/2017/07/avila.jpg',
     description: 'Located at Av. da República, close to Saldanha, it is a wide and quiet space, where several companies and professionals work, occupying one or more work stations, using the support of a professional secretariat, meeting and work rooms.',
     amenities:{ 
       basics:['Wifi','Air-conditioning'],
