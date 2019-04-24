@@ -75,8 +75,8 @@ require('./passport')(app);
     
 app.use((req,res,next) => {
   // Define a view variable named `isConnected`
-  // res.locals.isConnected = !!req.user 
-  req.app.locals.isConnected = !!req.user /// IMPORTANT
+  res.locals.isConnected = !!req.user 
+  // req.app.locals.isConnected = !!req.user /// IMPORTANT
 
   // Define a view variable named `connectedUser`
   // res.locals.isConnected = req.user && req.user.role === 'user'

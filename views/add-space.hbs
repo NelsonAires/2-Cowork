@@ -1,5 +1,3 @@
-<h1>Add/List your space</h1>
-
   {{!-- <nav>
   <div class="site-branding col-sm-4">
 			<h1 class="site-title">2Cowork</h1>
@@ -19,9 +17,9 @@
       </li>
     </ul>
 
-    </nav> --}}
+    </nav>
     
-{{!---Send the data to POST /create-space-----}}
+-------Send the data to POST /create-space-----------
 <form action="/create-space" method="post">
 Name: 
 <input type="text" name="name" class="form-control"> <br>
@@ -38,14 +36,67 @@ Opening hours:
 <input type="text" name="hours" class="form-control"> </input><br>
 
 
-{{!-- <section>
+<section>
   <h2>Upload your photo</h2>
   {{!-When we have a file, we have to add enctype="multipart/form-data"-}}
   <form action="/upload2" method="post" enctype="multipart/form-data">
     <input type="text" name="name"> <br>
     <input type="file" name="photo"> <br>
   </form>
-</section> --}}
+</section>
 
 <button type="submit" class="btn btn-primary">List!</button>
-</form>
+</form> --}}
+
+
+
+{{!-- --------------bootstramp Add space-------------- --}}
+
+<body>
+  <div class="container">
+    <div class="row">
+      <div class="col-md-8 col-lg-7 mx-auto">
+        <div class="card card-signin my-5">
+          <div class="card-body">
+            <h4 class="card-title text-center">Add your space</h4>
+            <form action="/auth/signup" method="POST" id="form-container" class="form-signin">
+
+              <div class="form-label-group">
+                <input name="email" type="email" id="name" class="form-control" placeholder="Email address">
+                <label for="name">Name</label>
+              </div>
+
+              <div class="form-label-group">
+                <input name="password" type="password" id="password" class="form-control" placeholder="Password" required>
+                <label for="password" >Address</label>
+              </div>
+
+              <div class="form-label-group">
+                <textarea name="email" type="email" id="email" class="form-control" placeholder="Email address" rows="10"></textarea>
+                <label for="email">Description</label>
+              </div>
+
+              <div class="form-label-group">
+                <input name="email" type="email" id="email" class="form-control" placeholder="Email address">
+                <label for="email">Amenities</label>
+              </div>
+
+              <div class="form-label-group">
+                <input name="email" type="email" id="email" class="form-control" placeholder="Email address">
+                <label for="email">Prices</label>
+              </div>
+
+              <div class="form-label-group">
+                <input name="search" type="email" id="email" class="form-control" placeholder="Email address">
+                <label for="email">Opening hours</label>
+              </div>
+
+              <button class="btn btn-lg btn-primary btn-block text-uppercase" type="submit">Do it!</button>
+             
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>

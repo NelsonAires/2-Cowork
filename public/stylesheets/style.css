@@ -7020,66 +7020,6 @@ a.text-dark:hover, a.text-dark:focus {
     color: inherit;
     border-color: #dee2e6; } }
 
-body {
-  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif; }
-
-a {
-  color: #4e5e66; }
-
-nav {
-  display: flex;
-  justify-content: space-evenly; }
-
-.container {
-  flex-direction: row !important; }
-
-.account-message {
-  text-align: center; }
-
-.card {
-  display: inline-block !important;
-  background-color: 100, 100, 100, 0.5 !important; }
-
-.card-img-top {
-  height: 90%; }
-
-.carousel {
-  height: 100%;
-  width: 100%; }
-
-.new1 {
-  border: none !important;
-  font-size: 20px; }
-
-.new2 {
-  border: none !important;
-  font-size: 12px; }
-
-.new3 {
-  border: none !important;
-  font-size: 12px; }
-
-.card-link {
-  margin-left: 20px !important; }
-
-footer {
-  padding-top: 30px;
-  height: 200px;
-  background-color: #323232;
-  font: 16px "Lucida Grande", Helvetica, Arial, sans-serif; }
-
-.foot-btn a {
-  margin-left: 20px;
-  display: inline-block;
-  color: #a8e1ce; }
-
-.foot-btn a:hover {
-  color: white;
-  text-decoration: none; }
-
-.image-framework {
-  width: 50%; }
-
 :root {
   --input-padding-x: 1.5rem;
   --input-padding-y: .75rem; }
@@ -7165,5 +7105,102 @@ footer {
 
 .btn-facebook {
   color: white; }
+
+:root {
+  --textarea-padding-x: 1.5rem;
+  --textarea-padding-y: .75rem; }
+
+.form-label-group textarea {
+  height: auto;
+  border-radius: 2rem; }
+
+.form-label-group > textarea,
+.form-label-group > label {
+  padding: var(--textarea-padding-y) var(--textarea-padding-x); }
+
+.form-label-group textarea::-webkit-textarea-placeholder {
+  color: transparent; }
+
+.form-label-group textarea:-ms-textarea-placeholder {
+  color: transparent; }
+
+.form-label-group textarea::-ms-textarea-placeholder {
+  color: transparent; }
+
+.form-label-group textarea::-moz-placeholder {
+  color: transparent; }
+
+.form-label-group textarea::placeholder {
+  color: transparent; }
+
+.form-label-group textarea:not(:placeholder-shown) {
+  padding-top: calc(var(--textarea-padding-y) + var(--textarea-padding-y) * (2 / 3));
+  padding-bottom: calc(var(--textarea-padding-y) / 3); }
+
+.form-label-group textarea:not(:placeholder-shown) ~ label {
+  padding-top: calc(var(--textarea-padding-y) / 3);
+  padding-bottom: calc(var(--textarea-padding-y) / 3);
+  font-size: 12px;
+  color: #777; }
+
+body {
+  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif; }
+
+a {
+  color: #4e5e66; }
+
+nav {
+  display: flex;
+  justify-content: space-evenly; }
+
+.container {
+  flex-direction: row !important;
+  text-align: center; }
+
+.account-message {
+  text-align: center; }
+
+.card {
+  background-color: 100, 100, 100, 0.5 !important; }
+
+.card-img-top {
+  width: 100%; }
+
+.carousel {
+  height: 100%;
+  width: 100%; }
+
+.new1 {
+  border: none !important;
+  font-size: 20px; }
+
+.new2 {
+  border: none !important;
+  font-size: 12px; }
+
+.new3 {
+  border: none !important;
+  font-size: 12px; }
+
+.card-link {
+  margin-left: 20px !important; }
+
+footer {
+  padding-top: 30px;
+  height: 200px;
+  background-color: #323232;
+  font: 16px "Lucida Grande", Helvetica, Arial, sans-serif; }
+
+.foot-btn a {
+  margin-left: 20px;
+  display: inline-block;
+  color: #a8e1ce; }
+
+.foot-btn a:hover {
+  color: white;
+  text-decoration: none; }
+
+.image-framework {
+  width: 50%; }
 
 /*# sourceMappingURL=style.css.map */

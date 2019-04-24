@@ -20,6 +20,7 @@ router.get('/add-space', (req, res, next) => {
 }); */
 
 router.get('/all-coworks', (req, res, next) => {
+  console.log("loooooool", req.user)
   Cowork.find()
     .then( coworks => {
       // console.log(Cowork[0].address[0].street)
