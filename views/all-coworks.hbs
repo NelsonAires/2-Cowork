@@ -1,28 +1,36 @@
-<h1>All co-works</h1>
-
 <div class="container">
 
+  <h1>All co-works</h1>
   {{!-- <div class="container2"> --}}
-  {{#each coworks}}
-  <div class="card" style="width: 18rem;">
-    <img class="card-img-top" src="{{this.images}}" alt="Card image cap">
-    {{!-- <div class="card-body">
+  <div class="row">
+    {{#each coworks}}
+    <div class="col">
+      <div class="card mx-auto my-3" style="width: 18rem">
+        <img class="card-img-top" src="{{this.images}}" alt="Card image cap">
+        {{!-- <div class="card-body">
       <h5 class="card-title"></h5>
     </div> --}}
-    <ul class="list-group list-group-flush">
-      <li class="new1 list-group-item"><strong>{{this.name}}</strong></li>
-      <li class="new2 list-group-item"><a href="https://www.google.com/maps/place/{{this.address}}" target="_blank">{{this.address}}</a></li>
-      <li class="new3 list-group-item"><strong>{{this.prices}}</strong></li>
-      <a href="/cowork-detail/{{this._id}}" class="card-link">More info</a>
-      <div class="btn btn-outline-primary">
-      <a href="/cowork-detail/{{this._id}}" class="card-link btn">Book now!</a>
-      {{!-- <a class="card-link btn">Book now</a>   --}}
+        <ul class="list-group list-group-flush">
+          <li class="new1 list-group-item"><strong>{{this.name}}</strong></li>
+          <li class="new2 list-group-item"><a href="https://www.google.com/maps/place/{{this.address}}"
+              target="_blank">{{this.address}}</a></li>
+          <li class="new3 list-group-item"><strong>{{this.prices}}</strong></li>
+          <a href="/cowork-detail/{{this._id}}" class="card-link">More info</a>
+
+          {{#if ../isConnected }}
+          <div class="btn btn-outline-primary">
+            <a href="/cowork-detail/{{this._id}}" class="card-link btn">Book now!</a>
+            {{!-- <a class="card-link btn">Book now</a>   --}}
+          </div>
+
+          {{/if}}
+        </ul>
+        <div class="card-body">
+        </div>
       </div>
-    </ul>
-    <div class="card-body">
     </div>
+    {{/each}}
   </div>
-{{/each}}
   {{!-- </div> --}}
 
 </div>

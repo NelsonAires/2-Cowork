@@ -30,16 +30,16 @@
             <h4 class="card-title text-center">Sign Up</h4>
             <form action="/auth/signup" method="POST" id="form-container" class="form-signin">
               <div class="form-label-group">
+                <input name="email" type="email" id="email" class="form-control" placeholder="Email address">
                 <label for="email">Email</label>
                 {{!-- <input id="email" type="email" name="email" placeholder="Your email"> --}}
-                <input name="email" type="email" id="email" class="form-control" placeholder="Email address">
               
               </div>
 
               <div class="form-label-group">
+                <input name="password" type="password" id="password" class="form-control" placeholder="Password" required>
                 <label for="password" >Password</label>
                 {{!-- <input id="password" type="password" name="password" placeholder="Your password">  --}}
-                <input name="password" type="password" id="password" class="form-control" placeholder="Password" required>
               </div>
 
               {{!-- <div class="custom-control custom-checkbox mb-3">

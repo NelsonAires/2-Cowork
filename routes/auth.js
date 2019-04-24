@@ -124,6 +124,10 @@ router.get("/logout", (req, res) => {
   res.redirect("/");
 });
 
+router.get("/signed-up", (req, res, next) => {
+  res.render("auth/signed-up")
+});
+
 router.get("/confirmation/:confirmationCode", (req, res) => {
   // TODO
   // Find the user with the confirmation code and make his status active
@@ -138,11 +142,13 @@ router.get("/confirmation/:confirmationCode", (req, res) => {
         user.active = true;
         user.save()
           .then(() => {
-            res.render("/");
+            req.login(user, () => {
+              res.redirect("/auth/signed-up");
+            })
             //sucessful
           })
           .catch(err => {
-            res.render('/')
+            next(err)
             //failure
           })
       }
