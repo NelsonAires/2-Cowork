@@ -7063,8 +7063,9 @@ nav {
 footer {
   height: 200px;
   background-color: #d8f9ee; }
-<<<<<<< HEAD
-=======
+
+.image-framework {
+  width: 50%; }
 
 :root {
   --input-padding-x: 1.5rem;
@@ -7151,6 +7152,5 @@ footer {
 
 .btn-facebook {
   color: white; }
->>>>>>> 88409c9537a0a40c963d7610dbf9ca1dd805f716
 
 /*# sourceMappingURL=style.css.map */
