@@ -25,11 +25,12 @@ nav {
 .card {
   // justify-content: space-between;
   display: inline-block !important;
-  padding-top: 1%;
-  padding-left: 1%;
+  background-color: (100, 100, 100, 0.5) !important;
+  // padding-top: 1%;
+  // padding-left: 1%;
   // padding: 1%;
   // background-color: black;
-  border: 1px solid black;
+  // border: 1px solid black;
 }
 
 .card-img-top {
@@ -45,4 +46,21 @@ nav {
   
   height: 500px;
   width: 100%;
+}
+
+.new1 {
+  border: none !important;
+  font-size: 20px;
+}
+.new2 {
+  border: none !important;
+  font-size: 12px;
+}
+.new3 {
+  border: none !important;
+  font-size: 12px;
+}
+
+.card-link {
+  margin-left: 20px !important;
 }

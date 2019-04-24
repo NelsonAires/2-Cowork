@@ -35,7 +35,7 @@ let users = [
 let coworks = [
   //1
   { 
-    name: 'Cowork Central Cais do Sodré',
+    name: 'Cowork Cais do Sodré',
     address: "Praça Duque da Terceira, 24, Lisbon, Portugal",
     email:'caisdosodre@gmail.com',
     website:'https://www.caisdosodre.com',
@@ -140,7 +140,7 @@ let coworks = [
   },
 //6 
   { 
-    name: 'Cowork Central Príncipe Real',
+    name: 'Cowork Príncipe Real',
     address: "Rua da Alegria, 122B, Lisbon, Portugal",
     email:'@gmail.com',
     website:'https://www.coworkcentral.pt',
@@ -224,7 +224,7 @@ let coworks = [
   }, 
   //10 
   { 
-    name: 'IDEIA Palácio Sottomayor',
+    name: 'Palácio Sottomayor',
     address: "Avenida Fontes Pereira de Melo, 16, Lisbon, Portugal",
     email:'@gmail.com',
     website:'https://www.coworkcentral.pt',
