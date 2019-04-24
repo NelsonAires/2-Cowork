@@ -9,10 +9,14 @@
       <h5 class="card-title"></h5>
     </div>
     <ul class="list-group list-group-flush">
-      <li class="list-group-item">{{this.name}}</li>
-      <li class="list-group-item">{{this.address}}</li>
-      <li class="list-group-item">{{this.prices}}</li>
+      <li class="new1 list-group-item"><strong>{{this.name}}</strong></li>
+      <li class="new2 list-group-item">{{this.address}}</li>
+      <li class="new3 list-group-item"><strong>{{this.prices}}</strong></li>
       <a href="/cowork-detail/{{this._id}}" class="card-link">More info</a>
+      <div class="btn btn-outline-primary">
+      <button><a href="/cowork-detail/{{this._id}}" class="card-link">Book now!</a> </button>
+      </div>
+      {{!-- <button class="card-link btn btn-outline-primary">Book now</button>   --}}
     </ul>
     <div class="card-body">
     </div>

@@ -25,11 +25,12 @@ nav {
 .card {
   // justify-content: space-between;
   display: inline-block !important;
-  padding-top: 1%;
-  padding-left: 1%;
+  background-color: (100, 100, 100, 0.5) !important;
+  // padding-top: 1%;
+  // padding-left: 1%;
   // padding: 1%;
   // background-color: black;
-  border: 1px solid black;
+  // border: 1px solid black;
 }
 
 .card-img-top {
@@ -47,13 +48,42 @@ nav {
   width: 100%;
 }
 
-footer{
-  height: 200px;
-  background-color: rgb(216, 249, 238);
-  
+.new1 {
+  border: none !important;
+  font-size: 20px;
+}
+.new2 {
+  border: none !important;
+  font-size: 12px;
+}
+.new3 {
+  border: none !important;
+  font-size: 12px;
 }
 
-.foot-btn{
-  display: flex;
-  justify-content: space-evenly;
+.card-link {
+  margin-left: 20px !important;
 }
+
+footer{
+  padding-top:30px;
+  height: 200px;
+  background-color: rgb(1, 1, 1);
+  font: 16px "Lucida Grande", Helvetica, Arial, sans-serif;
+}
+
+.foot-btn a{
+  margin-left: 20px;
+  display: inline-block;
+  // display: flex;
+  // flex-direction: column; 
+  // justify-content:left;
+  color: rgb(168, 225, 206);
+}
+
+.foot-btn a:hover{ 
+  // margin:10px;
+  color:white;
+  text-decoration: none;
+}
+
