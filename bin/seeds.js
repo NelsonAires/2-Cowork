@@ -52,6 +52,10 @@ let coworks = [
     opening_hours: {
       week_day: '9:00 am - 9:00 pm',
       weekend: 'closed' 
+    },
+    location: {
+      type1: "Point",
+      coordinates: [-9.1452867, 38.7066134]
     }
   },
 //2
@@ -73,6 +77,10 @@ let coworks = [
     opening_hours: {
       week_day: '9:00 am - 9:00 pm',
       weekend: 'closed' 
+    },
+    location: {
+      type1: "Point",
+      coordinates: [-9.23665819, 38.6469761]
     }
   },
     //3
@@ -94,6 +102,10 @@ let coworks = [
     opening_hours: {
       week_day: '9:00 am - 9:00 pm',
       weekend: 'closed' 
+    },
+    location: {
+      type1: "Point",
+      coordinates: [-9.1828413, 38.7020686]
     }
   },
   //4
@@ -115,6 +127,10 @@ let coworks = [
     opening_hours: {
       week_day: '9:00 am - 9:00 pm',
       weekend: 'closed' 
+    },
+    location: {
+      type1: "Point",
+      coordinates: [-9.1432403, 38.7565371]
     }
   },
   //5////////////
@@ -136,6 +152,10 @@ let coworks = [
     opening_hours: {
       week_day: '9:00 am - 9:00 pm',
       weekend: 'closed' 
+    },
+    location: {
+      type1: "Point",
+      coordinates: [-9.23665819, 38.6469761]
     }
   },
 //6 
@@ -158,6 +178,10 @@ let coworks = [
       week_day: '9:00 am - 8:00 pm',
       weekend: 'closed' 
     },
+    location: {
+      type1: "Point",
+      coordinates: [-9.1497635, 17, 38.7172234]
+    }
   },
   //7
   { 
@@ -179,6 +203,10 @@ let coworks = [
       week_day: '9:00 am - 7:00 pm',
       weekend: 'closed' 
     },
+    location: {
+      type1: "Point",
+      coordinates: [-9.1470209, 38.7348591]
+    }
   },
   //8
   { 
@@ -200,6 +228,10 @@ let coworks = [
       week_day: '9:00 am - 6:00 pm',
       weekend: 'closed' 
     },
+    location: {
+      type1: "Point",
+      coordinates: [-9.100224, 38.7702102]
+    }
   }, 
   //9 
   { 
@@ -221,6 +253,10 @@ let coworks = [
       week_day: '8:30 am - 7:00 pm',
       weekend: 'closed' 
     },
+    location: {
+      type1: "Point",
+      coordinates: [-9.1548361, 38.7216649]
+    }
   }, 
   //10 
   { 
@@ -242,6 +278,10 @@ let coworks = [
       week_day: '9:00 am - 6:00 pm',
       weekend: 'closed' 
     },
+    location: {
+      type1: "Point",
+      coordinates: [-9.1495605, 38.728708]
+    }
   }, 
   //11
   { 
@@ -263,6 +303,10 @@ let coworks = [
       week_day: '24 hours',
       weekend: '24 hours' 
     },
+    location: {
+      type1: "Point",
+      coordinates: [-9.1807824, 38.702878]
+    }
   }, 
   //12
   { 
@@ -284,6 +328,10 @@ let coworks = [
       week_day: '7:00 am - 11:00 pm',
       weekend: '9:00 am - 7:00 pm' 
     },
+    location: {
+      type1: "Point",
+      coordinates: [-9.1692683, 38.755383]
+    }
   }, 
   //13
   { 
@@ -305,6 +353,10 @@ let coworks = [
       week_day: '24 hours',
       weekend: '24 hours' 
     },
+    location: {
+      type1: "Point",
+      coordinates: [-9.1451212, 38.7249888]
+    }
   }, 
   //14
   { 
@@ -326,6 +378,10 @@ let coworks = [
       week_day: '8:30 am - 6:00 pm',
       weekend: 'closed' 
     },
+    location: {
+      type1: "Point",
+      coordinates: [-9.1500005, 38.7321525]
+    }
   }, 
   //15
   { 
@@ -347,6 +403,10 @@ let coworks = [
       week_day: '9:00 am - 6:00 pm',
       weekend: 'closed' 
     },
+    location: {
+      type1: "Point",
+      coordinates: [-9.1337696, 38.7212756]
+    }
   }, 
   //16
   { 
@@ -368,6 +428,10 @@ let coworks = [
       week_day: '9:00 am - 6:00 pm',
       weekend: 'closed' 
     },
+    location: {
+      type1: "Point",
+      coordinates: [-9.1549633, 38.7107974]
+    }
   }, 
   //17
   { 
@@ -389,6 +453,10 @@ let coworks = [
       week_day: '10:00 am - 6:30 pm',
       weekend: 'closed' 
     },
+    location: {
+      type1: "Point",
+      coordinates: [-9.1491892, 38.7317572]
+    }
   }, 
   //18
   { 
@@ -410,6 +478,10 @@ let coworks = [
       week_day: '8:30 am - 8:30 pm',
       weekend: '11:00 am - 7:00 pm' 
     },
+    location: {
+      type1: "Point",
+      coordinates: [-9.1485324, 38.5979802]
+    }
   }, 
   //19
   { 
@@ -431,6 +503,10 @@ let coworks = [
       week_day: '8:00 am - 10:00 pm',
       weekend: 'closed' 
     },
+    location: {
+      type1: "Point",
+      coordinates: [-9.1385534, 38.7132222]
+    }
   }, 
   //20
   { 
@@ -452,6 +528,10 @@ let coworks = [
       week_day: '24 hours',
       weekend: '24 hours' 
     },
+    location: {
+      type1: "Point",
+      coordinates: [-9.1836484, 38.7013927]
+    }
   }, 
 
 //COWORK
