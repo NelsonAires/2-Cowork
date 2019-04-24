@@ -60,7 +60,7 @@ hbs.registerHelper('ifUndefined', (value, options) => {
   
 
 // default value for title local
-app.locals.title = '2-CoWork';
+app.locals.title = '2Cowork';
 
 
 // Enable authentication using session + passport
