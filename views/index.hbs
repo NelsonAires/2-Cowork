@@ -116,6 +116,16 @@
       .setLngLat([-9.1452867, 38.7066134])
       .setPopup(popup)
       .addTo(map);
+
+    var popup = new mapboxgl.Popup({ offset: 25 })
+      .setHTML('<strong>test</strong>');
+    var marker = new mapboxgl.Marker({
+      color: 'blue'
+    })
+      .setLngLat([-9.23665819, 38.6469761])
+      .setPopup(popup)
+      .addTo(map);
+    
     
   </script>
 
