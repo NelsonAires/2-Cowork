@@ -7024,7 +7024,7 @@ body {
   font: 14px "Lucida Grande", Helvetica, Arial, sans-serif; }
 
 a {
-  color: #00B7FF; }
+  color: #4e5e66; }
 
 nav {
   display: flex;
@@ -7032,6 +7032,9 @@ nav {
 
 .container {
   flex-direction: row !important; }
+
+.account-message {
+  text-align: center; }
 
 .card {
   display: inline-block !important;

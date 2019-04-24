@@ -1,35 +1,69 @@
-<h2>Signup</h2>
+{{!-- <form action="/auth/signup" method="POST" id="form-container"> --}}
+{{!-- <label for="firstname">First name</label>
+  <input id="firstname" type="text" name="text" placeholder="Your first name"> --}}
 
-<form action="/auth/signup" method="POST" id="form-container">
-  <label for="firstname">First name</label>
-  <input id="firstname" type="text" name="text" placeholder="Your first name">
+{{!-- <label for="lastname">Last name</label>
+  <input id="lastname" type="text" name="text" placeholder="Your last name"> --}}
 
-  <br><br>
+{{!-- <label for="email">Email</label>
+  <input id="email" type="email" name="email" placeholder="Your email"> --}}
+
+{{!-- <label for="password">Password</label>
+  <input id="password" type="password" name="password" placeholder="Your password"> --}}
+
+{{!-- {{#if message }}
+  <div class="error-message">{{ message }}</div>
+  {{/if}} --}}
 
 
-  <label for="lastname">Last name</label>
-  <input id="lastname" type="text" name="text" placeholder="Your last name">
+{{!-- </form> --}}
 
-  <br><br>
 
-  <label for="email">Email</label>
-  <input id="email" type="email" name="email" placeholder="Your email">
+{{!-- --------------bootstramp sign in--------------- --}}
 
-  <br><br>
+<body>
+  <div class="container">
+    <div class="row">
+      <div class="col-sm-9 col-md-7 col-lg-5 mx-auto">
+        <div class="card card-signin my-5">
+          <div class="card-body">
+            <h4 class="card-title text-center">Sign Up</h4>
+            <form action="/auth/signup" method="POST" id="form-container" class="form-signin">
+              <div class="form-label-group">
+                <label for="email">Email</label>
+                {{!-- <input id="email" type="email" name="email" placeholder="Your email"> --}}
+                <input name="email" type="email" id="email" class="form-control" placeholder="Email address">
+              
+              </div>
 
-  <label for="password">Password</label>
-  <input id="password" type="password" name="password" placeholder="Your password">
-  <br>
-  {{#if message }}
-    <div class="error-message">{{ message }}</div>
-  {{/if}}
+              <div class="form-label-group">
+                <label for="password" >Password</label>
+                {{!-- <input id="password" type="password" name="password" placeholder="Your password">  --}}
+                <input name="password" type="password" id="password" class="form-control" placeholder="Password" required>
+              </div>
 
-  <br><br>
-
-  <button>Create account</button>
-
-  <p class="account-message">
-    Do you already have an account?
-    <a href="/auth/login">Login</a>
-  </p>
-</form>
+              {{!-- <div class="custom-control custom-checkbox mb-3">
+                <input type="checkbox" class="custom-control-input" id="customCheck1">
+                <label class="custom-control-label" for="customCheck1">Remember password</label>
+              </div> --}}
+              <button class="btn btn-lg btn-primary btn-block text-uppercase" type="submit">Create Account</button>
+              <hr class="my-4">
+              <button class="btn btn-lg btn-block text-uppercase" type="submit"><a href="https://www.google.com">Sign up
+                  with Google</a></button>
+              <button class="btn btn-lg btn-block text-uppercase" type="submit"><a href="https://www.facebook.com">Sign
+                  up with Facebook</a></button>
+              {{#if message }}
+              <div class="error-message">{{ message }}</div>
+              {{/if}}
+            </form>
+            <br>
+            <p class="account-message">
+              Already have an account?
+              <a href="/auth/login">Login</a>
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>

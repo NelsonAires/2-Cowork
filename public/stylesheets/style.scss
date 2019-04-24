@@ -7,7 +7,7 @@ body {
 }
 
 a {
-  color: #00B7FF;
+  color: rgb(78, 94, 102);
 }
 
 nav {
@@ -19,6 +19,10 @@ nav {
   // display: flex !important;
   flex-direction: row !important;
   // justify-content: space-between !important;
+}
+
+.account-message {
+  text-align: center;
 }
 
 .card {
