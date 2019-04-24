@@ -21,6 +21,10 @@ const coworkSchema = new Schema({
     week_day: String,
     weekend: String, 
   }],
+  location: {
+    type1: String,
+    coordinates: [Number]
+  }
 });
 
 const Cowork = mongoose.model('Cowork', coworkSchema);

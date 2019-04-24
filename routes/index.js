@@ -5,7 +5,11 @@ const Cowork = require('../models/Cowork')
 
 /* GET home page */
 router.get('/', (req, res, next) => {
-  res.render('index');
+  Cowork.find()
+    .then( coworks => {
+      // console.log(Cowork[0].address[0].street)
+      res.render('index', {coworks});
+    });
 });
 
 
@@ -38,6 +42,7 @@ router.get('/cowork-detail/:coworkId', (req, res, next) => {
 router.get('/signed-up', (req, res, next) => {
   res.render('signed-up');
 }); 
+
 
 
 

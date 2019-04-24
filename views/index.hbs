@@ -101,149 +101,22 @@
     // Add zoom and rotation controls to the map.
     map.addControl(new mapboxgl.NavigationControl(), 'bottom-right');
 
+
+
+    // TODO: create the marker
+
+
     //Add a marker
     //1
+    var popup = new mapboxgl.Popup({ offset: 25 })
+      .setHTML('Construction on the <strong>Washington Monument</strong> began in 1848.');
     var marker = new mapboxgl.Marker({
-      draggable: true,
-      color: 'red'
+      color: 'green'
     })
       .setLngLat([-9.1452867, 38.7066134])
+      .setPopup(popup)
       .addTo(map);
-    //2
-    var newMarker = new mapboxgl.Marker({
-      draggable: true,
-      color: 'red'
-    })
-      .setLngLat([-9.23665819, 38.6469761])
-      .addTo(map);
-    //Change from here
-    //3
-    var marker = new mapboxgl.Marker({
-      draggable: true,
-      color: 'red'
-    })
-      .setLngLat([-9.1828413, 38.7020686])
-      .addTo(map);
-    //4
-    var marker = new mapboxgl.Marker({
-      draggable: true,
-      color: 'red'
-    })
-      .setLngLat([-9.1432403, 38.7565371])
-      .addTo(map);
-    //5
-    var marker = new mapboxgl.Marker({
-      draggable: true,
-      color: 'red'
-    })
-      .setLngLat([-9.23665819, 38.6469761])
-      .addTo(map);
-    //6
-    var marker = new mapboxgl.Marker({
-      draggable: true,
-      color: 'red'
-    })
-      .setLngLat([-9.1497635, 17, 38.7172234])
-      .addTo(map);
-    //7
-    var marker = new mapboxgl.Marker({
-      draggable: true,
-      color: 'red'
-    })
-      .setLngLat([-9.1470209, 38.7348591])
-      .addTo(map);
-    //8
-    var marker = new mapboxgl.Marker({
-      draggable: true,
-      color: 'red'
-    })
-      .setLngLat([-9.100224, 38.7702102])
-      .addTo(map);
-    //9
-    var marker = new mapboxgl.Marker({
-      draggable: true,
-      color: 'red'
-    })
-      .setLngLat([-9.1548361, 38.7216649])
-      .addTo(map);
-    //10
-    var marker = new mapboxgl.Marker({
-      draggable: true,
-      color: 'red'
-    })
-      .setLngLat([-9.1495605, 38.728708])
-      .addTo(map);
-    //11
-    var marker = new mapboxgl.Marker({
-      draggable: true,
-      color: 'red'
-    })
-      .setLngLat([-9.1807824, 38.702878])
-      .addTo(map);
-    //12
-    var marker = new mapboxgl.Marker({
-      draggable: true,
-      color: 'red'
-    })
-      .setLngLat([-9.1692683, 38.755383])
-      .addTo(map);
-    //13
-    var marker = new mapboxgl.Marker({
-      draggable: true,
-      color: 'red'
-    })
-      .setLngLat([-9.1451212, 38.7249888])
-      .addTo(map);
-    //14
-    var marker = new mapboxgl.Marker({
-      draggable: true,
-      color: 'red'
-    })
-      .setLngLat([-9.1500005, 38.7321525])
-      .addTo(map);
-    //15
-    var marker = new mapboxgl.Marker({
-      draggable: true,
-      color: 'red'
-    })
-      .setLngLat([-9.1337696, 38.7212756])
-      .addTo(map);
-    //16
-    var marker = new mapboxgl.Marker({
-      draggable: true,
-      color: 'red'
-    })
-      .setLngLat([-9.1549633, 38.7107974])
-      .addTo(map);
-    //17
-    var marker = new mapboxgl.Marker({
-      draggable: true,
-      color: 'red'
-    })
-      .setLngLat([-9.1491892, 38.7317572])
-      .addTo(map);
-    //18
-    var marker = new mapboxgl.Marker({
-      draggable: true,
-      color: 'red'
-    })
-      .setLngLat([-9.1485324, 38.5979802])
-      .addTo(map);
-    //19
-    var marker = new mapboxgl.Marker({
-      draggable: true,
-      color: 'red'
-    })
-      .setLngLat([-9.1385534, 38.7132222])
-      .addTo(map);
-    //20
-    var marker = new mapboxgl.Marker({
-      draggable: true,
-      color: 'red'
-    })
-      .setLngLat([-9.1836484, 38.7013927])
-      .addTo(map);
-
+    
   </script>
 
 
