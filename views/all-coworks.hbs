@@ -5,10 +5,10 @@
   {{!-- <div class="container2"> --}}
   {{#each coworks}}
   <div class="card" style="width: 18rem;">
-    <img class="card-img-top" src="/images/coworkspace.jpg" alt="Card image cap">
-    <div class="card-body">
+    <img class="card-img-top" src="{{this.images}}" alt="Card image cap">
+    {{!-- <div class="card-body">
       <h5 class="card-title"></h5>
-    </div>
+    </div> --}}
     <ul class="list-group list-group-flush">
       <li class="new1 list-group-item"><strong>{{this.name}}</strong></li>
       <li class="new2 list-group-item"><a href="https://www.google.com/maps/place/{{this.address}}" target="_blank">{{this.address}}</a></li>

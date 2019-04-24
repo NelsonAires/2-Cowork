@@ -1,6 +1,6 @@
 const express = require('express');
 const router  = express.Router();
-const Coworks = require('../models/Coworks')
+const Cowork = require('../models/Cowork')
 // const Picture = require('../models/picture'); 
 
 /* GET home page */
@@ -20,15 +20,15 @@ router.get('/add-space', (req, res, next) => {
 }); */
 
 router.get('/all-coworks', (req, res, next) => {
-  Coworks.find()
+  Cowork.find()
     .then( coworks => {
-      // console.log(Coworks[0].address[0].street)
+      // console.log(Cowork[0].address[0].street)
       res.render('all-coworks', {coworks});
     })
 });
 
 router.get('/cowork-detail/:coworkId', (req, res, next) => {
-  Coworks.findById(req.params.coworkId)
+  Cowork.findById(req.params.coworkId)
   .then(cowork => {
     res.render('cowork-detail', {cowork});
   })

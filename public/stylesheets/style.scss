@@ -1,8 +1,5 @@
-
 // $primary : black; //para a cor primária na nav-bar . $primary . Tem de ser defenida primeiro.
-
 $primary: rgb(168, 225, 206);
-
 @import '../../node_modules/bootstrap/scss/bootstrap.scss';
 
 body {
@@ -32,24 +29,14 @@ nav {
   // justify-content: space-between;
   display: inline-block !important;
   background-color: (100, 100, 100, 0.5) !important;
-  // padding-top: 1%;
-  // padding-left: 1%;
-  // padding: 1%;
-  // background-color: black;
-  // border: 1px solid black;
 }
 
 .card-img-top {
-  width: 90%;
+  // width: 90%;
   height: 90%;
 }
-  
-// .bg-light-2{
-//   background-color: rgb(168, 225, 206);
-// }
 
 .carousel{
-  // box-sizing: content-box;
   height: 100%;
   width: 100%;
 }
@@ -72,9 +59,28 @@ nav {
 }
 
 footer{
+  padding-top:30px;
   height: 200px;
-  background-color: rgb(216, 249, 238);
-  
+  background-color: rgb(50, 50, 50);
+  font: 16px "Lucida Grande", Helvetica, Arial, sans-serif;
+}
+
+.foot-btn a{
+  margin-left: 20px;
+  display: inline-block;
+  // display: flex;
+  // flex-direction: column; 
+  // justify-content:left;
+  color: rgb(168, 225, 206);
+}
+
+.foot-btn a:hover{ 
+  color:white;
+  text-decoration: none;
+}
+
+.image-framework{
+  width: 50%;
 }
 // --------------------daqui---------------------
 :root {
