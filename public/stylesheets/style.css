@@ -7038,7 +7038,6 @@ nav {
   background-color: 100, 100, 100, 0.5 !important; }
 
 .card-img-top {
-  width: 90%;
   height: 90%; }
 
 .carousel {
@@ -7061,8 +7060,21 @@ nav {
   margin-left: 20px !important; }
 
 footer {
+  padding-top: 30px;
   height: 200px;
-  background-color: #d8f9ee; }
+  background-color: #323232;
+  font: 16px "Lucida Grande", Helvetica, Arial, sans-serif; }
+
+.foot-btn a {
+  margin-left: 20px;
+  display: inline-block;
+  color: #a8e1ce; }
+
+.foot-btn a:hover {
+  color: white;
+  text-decoration: none; }
+
+  /* {background-color: #d8f9ee; } */
 
 .image-framework {
   width: 50%; }
