@@ -24,22 +24,23 @@ router.get('/add-space', checkConnected, (req, res, next) => {
 router.post('/add-space', checkConnected, (req, res, next) => {
   console.log('req.body', req.body)
   Cowork.create({
-      name: req.body.name,
-      address: req.body.address,
-      email: req.body.email,
-      website: req.body.website,
-      description: req.body.description,
-      prices: req.body.prices,
-      opening_hours: {
-        week_day: req.body.week_day,
-        weekend: req.body.weekend
-      },
-      _owner: req.user._id
-    })
-    .then(() => {
-      console.log("Cowork created, you are going to be redirected")
-      res.redirect('all-coworks')
-    })
+    images: req.body.images,
+    name: req.body.name,
+    address: req.body.address,
+    email: req.body.email,
+    website: req.body.website,
+    description: req.body.description,
+    prices: req.body.prices,
+    opening_hours : {
+    week_day: req.body.week_day,
+    weekend: req.body.weekend
+    },
+    _owner: req.user._id
+  })
+  .then(() => {
+    console.log("Cowork created, you are going to be redirected")
+    res.redirect('my-space')
+  })
   // TODO: continue
   // Create a Cowork
   // when it's done, redirect to the detail page
