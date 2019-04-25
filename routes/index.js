@@ -25,8 +25,10 @@ router.post('/add-space', checkConnected, (req, res, next) => {
     website: req.body.website,
     description: req.body.description,
     prices: req.body.prices,
+    opening_hours : {
     week_day: req.body.week_day,
-    weekend: req.body.weekend,
+    weekend: req.body.weekend
+    },
     _owner: req.user._id
   })
   .then(() => {
