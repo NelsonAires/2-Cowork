@@ -75,13 +75,17 @@ router.get('/cowork-detail/:coworkId', (req, res, next) => {
 });
 
 
-// PARA ACABAR ---------------------------------------
+
+// ----------------send the email--------- TODO
+
+
+
 // router.post('/cowork-detail/:coworkId/reserve', (req, res, next) => {
 //   // TODO: send an email
 //   console.log("req.body", req.body)
-//   router.get('/cowork-detail/:coworkId', (req, res, next) => {
-//     Cowork.findById(req.params.coworkId)
-//       .then(cowork => {
+  // router.get('/cowork-detail/:coworkId', (req, res, next) => {
+  //   Cowork.findById(req.params.coworkId)
+  //     .then(() => {
 //         // send the email
 //           let transporter = nodemailer.createTransport({
 //             service: 'Gmail',
@@ -96,7 +100,7 @@ router.get('/cowork-detail/:coworkId', (req, res, next) => {
         
 //           transporter.sendMail({
 //               from: '"2-CoWork 👻" <2coworkiron@gmail.com>',
-//               to: User.email,
+//               to: email,
 //               subject: 'Email confirmed',
 //               text: '',
 //               html: `Bla Bla Bla Bla`,
@@ -104,7 +108,7 @@ router.get('/cowork-detail/:coworkId', (req, res, next) => {
         
 //             // When it s done, you can redirect to /cowork-detail/:coworkId/reserved
 //             .then(() => {
-//               res.redirect('/cowork-detail/:coworkId/reserved')
+              // res.redirect('/cowork-detail/:coworkId/reserved')
 //             })
 //       })
 //   });
