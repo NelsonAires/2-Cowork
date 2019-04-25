@@ -73,7 +73,9 @@ router.get('/cowork-detail/:coworkId', (req, res, next) => {
       });
     })
 });
-// --------------------PARA ARRANJAR------------------
+
+
+// PARA ACABAR ---------------------------------------
 // router.post('/cowork-detail/:coworkId/reserve', (req, res, next) => {
 //   // TODO: send an email
 //   console.log("req.body", req.body)
