@@ -1,7 +1,16 @@
+{{!-- <style>
+    body {
+      background-color: rgb(235, 235, 235);}
+      
+      p {
+        text-align: center;
+        color: darkmagenta;
+      }
+</style> --}}
+
+
 <br>
 <h2>My Coworks</h2>
 {{#each coworks}} 
 <a href="/cowork-detail/{{_id}}"><ul><li>{{this.name}}</li></ul></a>
 {{/each}}
-
-

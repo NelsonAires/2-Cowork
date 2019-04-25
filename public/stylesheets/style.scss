@@ -6,6 +6,9 @@ $primary: rgb(168, 225, 206);
 
 body {
   font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
 }
 
 a {
@@ -60,21 +63,44 @@ nav {
 .card-link {
   margin-left: 20px !important;
 }
-
+// COMENTARIOS
 .comments{
+  display: flex;
   height: 400px;
   width: 100%;
-  background-color: darkgoldenrod;
+  background-color: rgb(194, 194, 194);
 }
 
-footer{
-  padding-top:30px;
-  height: 200px;
+.centrar{
+  align-content: center;
+  justify-content: space-between;
+  margin:auto;
+  padding: 10px;
+}
+
+main {
+  flex-grow: 1;
+}
+
+.foot-btn{
+
+  width: 100%;
+  height: 180px;
   background-color: rgb(50, 50, 50);
   font: 16px "Lucida Grande", Helvetica, Arial, sans-serif;
   }
 
+  // #footer {
+  //   position: relative;
+  //   margin-top: -180px;
+  //   /* negative value of footer height */
+  //   height: 180px;
+  //   clear: both;
+  //   background-color: red;
+  // }
+
 .foot-btn a{
+  margin-top: 20px;
   margin-left: 20px;
   display: inline-block;
   // display: flex;
@@ -99,20 +125,18 @@ footer{
 
 .verify-email{
   width:100%;
-  height:450px;
-  
+  height:500px;
 } 
 .verify-email p{
-  margin: 50px;
+  margin: 10px;
   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
   font-size: 24px;
-  text-align: center;
-  color: deeppink;
-  
+  text-align: center; 
 }
-
 .page-index {
   #map {
     height: 400px;
   }
 }
+
+

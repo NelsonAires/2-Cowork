@@ -45,32 +45,36 @@
         <div class="card card-signin my-5">
           <div class="card-body">
             <h4 class="card-title text-center">Schedule a place</h4>
+            <form action="/cowork-detail/{{cowork._id}}/reserve" method="POST" id="form-container" class="form-signin">
+              <div class="form-label-group">
+             
+              <div class="form-label-group">
+                <input name="number" type="number" id="number" class="form-control" placeholder="number" required>
+                <label for="number" >Number of participants</label>
+              </div>
 
-            <form action="/add-space" method="POST" id="form-container" class="form-signin">
+
+               <div class="form-label-group">
+                <input name="date" type="text" id="date" class="form-control" placeholder="date">
+                <label for="date">Date</label>
+              </div> 
+
+               <div class="form-label-group">
+                <input name="email" type="email" id="email" class="form-control" placeholder="Email address">
+                <label for="email">Enter your email</label>
+              </div> 
 
               <div class="form-label-group">
-                <button type="button" class="btn btn-lg btn-primary btn-block text-uppercase dropdown-toggle"
-                  data-toggle="dropdown" aria-haspopup="true">Select the date
-                </button>
+                <textarea name="description" type="description" id="description" class="form-control" placeholder="Description" rows="3"></textarea>
+                <label for="description">Add something</label>
+              </div>
                 <div class="dropdown-menu">
-
-                  <div>
-                    <label for="participants">Number of participants</label>
-                    <input type="number" id="participants" placeholder="Number of participants" />
-                  </div>
-
-                  <div>
-                    <label for="date">Date</label>
-                    <input type="date" id="date" />
-                  </div>
-
                 </div>
               </div>
               <hr>
-              <button class="btn btn-lg btn-primary btn-block text-uppercase" type="button">Reserve</button>
+              <button type="submit" class="btn btn-lg btn-primary btn-block text-uppercase">Reserve</button>
             
             </form>
-
           </div>
         </div>
       </div>

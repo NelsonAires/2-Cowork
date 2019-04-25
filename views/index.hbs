@@ -57,7 +57,6 @@
         </div>
       </div>
 
-
       <a class="carousel-control-prev" href="#carouselExampleCaptions" role="button" data-slide="prev">
         <span class="carousel-control-prev-icon" aria-hidden="true"></span>
         <span class="sr-only">Previous</span>
@@ -69,15 +68,49 @@
     </div>
   </div>
 
-
-
   <div id='map'></div>
 
-  <div class="comments">teste de senisgas lá dentro
-  </div>
+  {{!-- LARANJA INCIO --}}
+
+  <div class="comments">
+    <div class="centrar">
+      <div class="card" style="width: 14rem;">
+        <img class="card-img-top" src="/images/Slide_5.jpg" alt="Card image cap">
+        <div class="card-body">
+          <h5 class="card-title">Cowork Chiado</h5>
+          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+        </div>
+        </div>
+    </div>
+    <div class="centrar">
+       <div class="card" style="width: 14rem;">
+        <img class="card-img-top" src="/images/Slide_1.jpg" alt="Card image cap">
+        <div class="card-body">
+          <h5 class="card-title">Sodré Cowork</h5>
+          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+        </div> 
+      </div>
+    </div>
+    <div class="centrar">
+       <div class="card" style="width: 14rem;">
+        <img class="card-img-top" src="/images/Slide_3.jpg" alt="Card image cap">
+        <div class="card-body">
+          <h5 class="card-title">My Cowork</h5>
+          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+        </div> 
+      </div>
+    </div>
+
 
 </div>
 
+
+
+
+
+ {{!-- LARANJA FIM --}}
+
+</div>
 <script>
   mapboxgl.accessToken = 'pk.eyJ1Ijoic29maWFvIiwiYSI6ImNqdWwxZXdqZDA2c3QzeW81YmtpNHN2eTAifQ.eEz8uoeY77tN7lOzpxgBFg';
 
@@ -91,7 +124,6 @@
 
   // Add zoom and rotation controls to the map.
   map.addControl(new mapboxgl.NavigationControl(), 'bottom-right');
-
 
   {{#each coworks}}
     try {
