@@ -44,6 +44,11 @@ router.get('/signed-up', (req, res, next) => {
   res.render('signed-up');
 }); 
 
+router.get('/my-space', (req, res, next) => {
+  res.render('my-space');
+}); 
+
+
 
 
 
