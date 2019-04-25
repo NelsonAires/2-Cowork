@@ -3,10 +3,23 @@
       background-color: rgb(235, 235, 235);
       }
 </style>
-
-<div class="verify-email">
-
-<p>(; You email were sucessful verified! ;)</p>
-<p>criar botao com route "/index" ou "/login"</p>
-
-</div>
+<div class="container">
+    <div class="row">
+      <div class="col-sm-9 col-md-7 col-lg-5 mx-auto">
+        <div class="card card-signin my-5">
+          <div class="card-body">
+            <h4 class="card-title text-center">Your email was sucessfully verified!</h4>
+            <form action="/auth/login" method="POST" id="form-container" class="form-signin">
+              <div class="form-label-group">
+              </div>
+              <button class="btn btn-lg btn-primary btn-block text-uppercase" type="submit">Log in</button>
+              <hr class="my-4">
+              {{#if message }}
+              <div class="alert alert-danger">{{ message }}</div>
+              {{/if}}
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>

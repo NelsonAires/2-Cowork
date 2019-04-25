@@ -102,6 +102,50 @@
   {{this.weekend}}
 {{/each}}</p>  
 
+<<<<<<< HEAD
 <br>
 {{!-- TODO: Add a form for peoople to book a place (begin date/hour and end date/hour) that sends an email to the cowork space --}}
 <br>
+=======
+  <div class="container">
+    <div class="row">
+      <div class="col-md-8 col-lg-7 mx-auto">
+        <div class="card card-signin my-5">
+          <div class="card-body">
+            <h4 class="card-title text-center">Schedule a place</h4>
+            <form action="/cowork-detail/{{cowork._id}}/reserve" method="POST" id="form-container" class="form-signin">
+              <div class="form-label-group">
+             
+              <div class="form-label-group">
+                <input name="number" type="number" id="number" class="form-control" placeholder="number" required>
+                <label for="number" >Number of participants</label>
+              </div>
+
+
+               <div class="form-label-group">
+                <input name="date" type="date" id="date" class="form-control" placeholder="date" required>
+                <label for="date">Date</label>
+              </div> 
+
+               <div class="form-label-group">
+                <input name="email" type="email" id="email" class="form-control" placeholder="Email address" required>
+                <label for="email">Enter your email</label>
+              </div> 
+
+              <div class="form-label-group">
+                <textarea name="description" type="description" id="description" class="form-control" placeholder="Description" rows="3"></textarea>
+                <label for="description">Add something</label>
+              </div>
+                <div class="dropdown-menu">
+                </div>
+              </div>
+              <hr>
+              <button type="submit" class="btn btn-lg btn-primary btn-block text-uppercase">Reserve</button>
+            
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+>>>>>>> 210f73b5804d6d7c99782d4f497e5c25e87af5eb
