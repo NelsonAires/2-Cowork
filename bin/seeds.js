@@ -63,7 +63,7 @@ let coworks = [
 //2
   { 
     name: 'The Sea Office',
-    address: "Praça Duque da Terceira, 24 Lisbon, Portugal",
+    address: "R. Norberto de Araújo 19, Lisbon, Portugal",
     email:'theseaoffice@gmail.com',
     website:'https://www.caisdosodre.com',
     images:'https://static1.squarespace.com/static/56c77f73f699bb77fbd8e303/t/59de610e90badef7f4cfe669/1507746077917/houspace-lisbon-coworking',

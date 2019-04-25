@@ -1,4 +1,4 @@
-  {{!-- <nav>
+{{!-- <nav>
   <div class="site-branding col-sm-4">
 			<h1 class="site-title">2Cowork</h1>
   </div>
@@ -54,49 +54,63 @@ Opening hours:
 
 <body>
   <style>
-    body {background-color: rgb(235, 235, 235);}
-</style>
+    body {
+      background-color: rgb(235, 235, 235);
+    }
+  </style>
   <div class="container">
     <div class="row">
       <div class="col-md-8 col-lg-7 mx-auto">
         <div class="card card-signin my-5">
           <div class="card-body">
             <h4 class="card-title text-center">Add your space</h4>
-            <form action="/add-space" method="POST" id="form-container" class="form-signin" enctype="multipart/form-data">
+            <form action="/add-space" method="POST" id="form-container" class="form-signin"
+              enctype="multipart/form-data">
 
-
+              {{!-- ACABAR A MERDA DESTE BOTAO!!! --}}
 
               <div class="form-label-group">
                 <input name="photo" type="file" id="photo" class="form-control">
                 <label for="photo">Photo</label>
+                <button class="btn btn-primary btn-block">
+                  <input name="photo" type="file" id="photo" class="form-control">
+                </button>
               </div>
+
+                <div class="form-label-group">
+                <label class="btn btn-primary" for="my-file-selector">Button Text Here</label>
+                  <input   name="photo" type="file" id="photo" class="form-control" placeholder="Email address">
+                  Button Text Here
+                </div>
+            {{!-- BOTAO ATÉ AQUI!!!! --}}
 
               <div class="form-label-group">
                 <input name="name" type="text" id="name" class="form-control" placeholder="Email address">
                 <label for="name">Name</label>
               </div>
 
-               <div class="form-label-group">
+              <div class="form-label-group">
                 <input name="email" type="email" id="email" class="form-control" placeholder="Email address">
                 <label for="email">Enter your email</label>
-              </div> 
+              </div>
 
-               <div class="form-label-group">
+              <div class="form-label-group">
                 <input name="website" type="text" id="website" class="form-control" placeholder="Website">
                 <label for="website">Enter your website</label>
-              </div> 
+              </div>
 
               <div class="form-label-group">
                 <input name="address" type="address" id="address" class="form-control" placeholder="address" required>
-                <label for="address" >Address</label>
+                <label for="address">Address</label>
               </div>
 
               <div class="form-label-group">
-                <textarea name="description" type="description" id="description" class="form-control" placeholder="Description" rows="10"></textarea>
+                <textarea name="description" type="description" id="description" class="form-control"
+                  placeholder="Description" rows="10"></textarea>
                 <label for="description">Description</label>
               </div>
 
- {{!--              <div class="form-label-group">
+              {{!--              <div class="form-label-group">
                 <input name="amenities" type="text" id="amenities" class="form-control" placeholder="Email address">
                 <label for="amenities">Amenities</label>
               </div> --}}
@@ -110,13 +124,13 @@ Opening hours:
                 <input name="week_day" type="text" id="week_day" class="form-control">
                 <label for="week_day">Opening hours (week days)</label>
               </div>
-                <div class="form-label-group">
+              <div class="form-label-group">
                 <input name="weekend" type="text" id="weekend" class="form-control">
                 <label for="weekend">Opening hours (weekend)</label>
               </div>
 
               <button class="btn btn-lg btn-primary btn-block text-uppercase" type="submit">Do it!</button>
-             
+
             </form>
           </div>
         </div>

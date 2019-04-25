@@ -125,14 +125,18 @@ router.post('/cowork-detail', checkConnected, (req, res, next) => {
   res.redirect('/reserved');
 });
 
-router.get('/cowork-detail/:coworkId/reserved', (req, res, next) => {
+//////////TODO
+/* router.get('/cowork-detail/:coworkId/reserved', (req, res, next) => {
   res.render('my-space');
 });
 
-router.post('/cowork-detail', checkConnected, (req, res, next) => {
+router.post('/cowork-detail/_coworkId/reserved', checkConnected, (req, res, next) => {
   res.redirect('/my-space');
 });
+ */
 
+
+///////
 router.get('/signed-up', (req, res, next) => {
   res.render('signed-up');
 });
