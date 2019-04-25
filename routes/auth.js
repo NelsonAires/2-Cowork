@@ -92,7 +92,7 @@ router.post("/signup", (req, res, next) => {
             rejectUnauthorized: false
           }
         });
-        let url = "http://localhost:3000/auth/confirmation/" + confirmationCode
+        let url = process.env.BASE_URL + "/auth/confirmation/" + confirmationCode
         transporter.sendMail({
           from: '"2-CoWork 👻" <2coworkiron@gmail.com>',
           to: email,
