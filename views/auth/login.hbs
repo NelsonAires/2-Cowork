@@ -51,12 +51,8 @@
               </div> --}}
               <button class="btn btn-lg btn-primary btn-block text-uppercase" type="submit">Log in</button>
               <hr class="my-4">
-              <button class="btn btn-lg btn-block text-uppercase" type="submit"><a href="https://www.google.com">Log in
-                  with Google</a></button>
-              <button class="btn btn-lg btn-block text-uppercase" type="submit"><a href="https://www.facebook.com">Log in 
-                  with Facebook</a></button>
               {{#if message }}
-              <div class="error-message">{{ message }}</div>
+              <div class="alert alert-danger">{{ message }}</div>
               {{/if}}
             </form>
           </div>

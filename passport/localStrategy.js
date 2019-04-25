@@ -20,6 +20,11 @@ passport.use(new LocalStrategy({
         return;
       }
 
+      if (!foundUser.active) {
+        done(null, false, { message: 'You need to validate your account, check your email 😉' });
+        return;
+      }
+
       done(null, foundUser);
     })
     .catch(err => done(err));
