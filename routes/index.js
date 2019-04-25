@@ -18,10 +18,28 @@ router.get('/add-space', checkConnected, (req, res, next) => {
 
 router.post('/add-space', checkConnected, (req, res, next) => {
   console.log('req.body', req.body)
+  Cowork.create({
+    name: req.body.name,
+    address: req.body.address,
+    email: req.body.email,
+    website: req.body.website,
+    description: req.body.description,
+    prices: req.body.prices,
+    opening_hours : {
+    week_day: req.body.week_day,
+    weekend: req.body.weekend
+    },
+    _owner: req.user._id
+  })
+  .then(() => {
+    console.log("Cowork created, you are going to be redirected")
+    res.redirect('all-coworks')
+  })
   // TODO: continue
   // Create a Cowork
   // when it's done, redirect to the detail page
 });
+
 
 /* router.get('/', function(req, res, next) {
   Picture.find((err, pictures) => {
@@ -30,7 +48,7 @@ router.post('/add-space', checkConnected, (req, res, next) => {
 }); */
 
 router.get('/all-coworks', (req, res, next) => {
-  console.log("loooooool", req.user)
+  console.log("user:", req.user)
   Cowork.find()
     .then( coworks => {
       // console.log(Cowork[0].address[0].street)
@@ -52,12 +70,16 @@ router.get('/signed-up', (req, res, next) => {
 
 router.get('/my-space', (req, res, next) => {
   // TODO: find all the coworks where _owner is the connected user
-  // then renser 'my-space
-  res.render('my-space');
+  Cowork.find({
+    _owner: req.user._id
+  })
+  .then(coworks => {
+      // then render 'my-space
+    res.render('my-space', {coworks});
+  })
+
+ 
 }); 
-
-
-
 
 
 module.exports = router;

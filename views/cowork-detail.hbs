@@ -39,6 +39,46 @@
   {{this.weekend}}
 {{/each}}</p>  
 
+<<<<<<< HEAD
 <hr>
 {{!-- TODO: Add a form for peoople to book a place (begin date/hour and end date/hour) that sends an email to the cowork space --}}
 <hr>
+=======
+  <div class="container">
+    <div class="row">
+      <div class="col-md-8 col-lg-7 mx-auto">
+        <div class="card card-signin my-5">
+          <div class="card-body">
+            <h4 class="card-title text-center">Schedule a place</h4>
+
+            <form action="/add-space" method="POST" id="form-container" class="form-signin">
+
+              <div class="form-label-group">
+                <button type="button" class="btn btn-lg btn-primary btn-block text-uppercase dropdown-toggle"
+                  data-toggle="dropdown" aria-haspopup="true">Select the date
+                </button>
+                <div class="dropdown-menu">
+
+                  <div>
+                    <label for="participants">Number of participants</label>
+                    <input type="number" id="participants" placeholder="Number of participants" />
+                  </div>
+
+                  <div>
+                    <label for="date">Date</label>
+                    <input type="date" id="date" />
+                  </div>
+
+                </div>
+              </div>
+              <hr>
+              <button class="btn btn-lg btn-primary btn-block text-uppercase" type="button">Reserve</button>
+            
+            </form>
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+>>>>>>> e26a6ee52bdb3931a96d1008cd3c021560f4ad81

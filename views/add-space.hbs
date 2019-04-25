@@ -64,10 +64,21 @@ Opening hours:
             <h4 class="card-title text-center">Add your space</h4>
             <form action="/add-space" method="POST" id="form-container" class="form-signin">
 
+
               <div class="form-label-group">
                 <input name="name" type="text" id="name" class="form-control" placeholder="Email address">
                 <label for="name">Name</label>
               </div>
+
+               <div class="form-label-group">
+                <input name="email" type="email" id="email" class="form-control" placeholder="Email address">
+                <label for="email">Enter your email</label>
+              </div> 
+
+               <div class="form-label-group">
+                <input name="website" type="text" id="website" class="form-control" placeholder="Website">
+                <label for="website">Enter your website</label>
+              </div> 
 
               <div class="form-label-group">
                 <input name="address" type="address" id="address" class="form-control" placeholder="address" required>
@@ -75,14 +86,14 @@ Opening hours:
               </div>
 
               <div class="form-label-group">
-                <textarea name="email" type="email" id="email" class="form-control" placeholder="Email address" rows="10"></textarea>
-                <label for="email">Description</label>
+                <textarea name="description" type="description" id="description" class="form-control" placeholder="Description" rows="10"></textarea>
+                <label for="description">Description</label>
               </div>
 
-              <div class="form-label-group">
+ {{!--              <div class="form-label-group">
                 <input name="amenities" type="text" id="amenities" class="form-control" placeholder="Email address">
                 <label for="amenities">Amenities</label>
-              </div>
+              </div> --}}
 
               <div class="form-label-group">
                 <input name="prices" type="text" id="prices" class="form-control" placeholder="Email address">
@@ -90,8 +101,12 @@ Opening hours:
               </div>
 
               <div class="form-label-group">
-                <input name="Opening hours" type="text" id="Opening hours" class="form-control" placeholder="Email address">
-                <label for="Opening hours">Opening hours</label>
+                <input name="week_day" type="text" id="week_day" class="form-control">
+                <label for="week_day">Opening hours (week days)</label>
+              </div>
+                <div class="form-label-group">
+                <input name="weekend" type="text" id="weekend" class="form-control">
+                <label for="weekend">Opening hours (weekend)</label>
               </div>
 
               <button class="btn btn-lg btn-primary btn-block text-uppercase" type="submit">Do it!</button>
