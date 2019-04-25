@@ -1,4 +1,4 @@
-
+{{!-- 
 
 <h1>{{cowork.name}}</h1> <br><br>
 
@@ -38,7 +38,70 @@
 {{#each cowork.opening_hours}}
   {{this.weekend}}
 {{/each}}</p>  
+--}}
 
-<hr>
+<br>
+
+
+
+<style>
+  p{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 16px;
+    text-align: center;
+    }
+
+    h1{
+      text-align: center;
+      text-shadow: 3px 2px 2px rgba(157, 219, 153, 0.3);
+      font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+      }
+
+
+</style>
+
+<h1>{{cowork.name}}</h1> <br>
+<div class="img-cowork">
+<img src="{{cowork.images}}" alt="Img N/A" class="image-framework"> 
+</div>
+<br><br>
+<p><strong>Address:</strong> {{cowork.address}}</p> 
+<p><strong>Email:</strong> {{cowork.email}}</p> 
+<p><strong>Website:</strong> {{cowork.website}}</p> 
+<div class="description">
+  <p><strong>Description: </strong>{{cowork.description}}</p> 
+</div>
+<p><strong>Amenities</strong><br> 
+<i>Basics:</i> {{#each cowork.amenities}}
+  {{this.basics}}
+{{/each}}<br>
+<i>Equipment: </i>
+{{#each cowork.amenities}}
+  {{this.equipment}}
+{{/each}}<br>
+<i>Facilities: </i>
+{{#each cowork.amenities}}
+  {{this.facilities}}
+{{/each}}<br>
+<i>Transportation: </i>
+{{#each cowork.amenities}}
+  {{this.transportation}}
+{{/each}}<br>
+<i>Relax Zones: </i>
+{{#each cowork.amenities}}
+  {{this.relax_zones}}
+{{/each}}
+</p> 
+<p><strong>Prices:</strong> {{cowork.prices}}</p> 
+<p><strong>Opening Hours:</strong><br> 
+<i>Week Days:</i> {{#each cowork.opening_hours}}
+  {{this.week_day}}
+{{/each}}<br>
+<i>Weekend: </i>
+{{#each cowork.opening_hours}}
+  {{this.weekend}}
+{{/each}}</p>  
+
+<br>
 {{!-- TODO: Add a form for peoople to book a place (begin date/hour and end date/hour) that sends an email to the cowork space --}}
-<hr>
+<br>
