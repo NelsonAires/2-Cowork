@@ -20,17 +20,17 @@
           <li class="new2 list-group-item"><a href="https://www.google.com/maps/place/{{this.address}}"
               target="_blank">{{this.address}}</a></li>
           <li class="new3 list-group-item"><strong>{{this.prices}}</strong></li>
-          <a href="/cowork-detail/{{this._id}}" class="card-link">More info</a>
           <br>
+          <a href="/cowork-detail/{{this._id}}" class="card-link">More info</a>
 
 
-          {{#if ../isConnected }}
-          <div class="btn btn-outline-primary">
-            <a href="/cowork-detail/{{this._id}}" class="card-link btn">Book now!</a>
+          {{!-- {{#if ../isConnected }} --}}
+          {{!-- <div class="btn btn-outline-primary"> --}}
+            {{!-- <a href="/cowork-detail/{{this._id}}" class="card-link btn">Book now!</a> --}}
             {{!-- <a class="card-link btn">Book now</a>   --}}
-          </div>
+          {{!-- </div> --}}
 
-          {{/if}}
+          {{!-- {{/if}} --}}
         </ul>
         <div class="card-body">
         </div>
