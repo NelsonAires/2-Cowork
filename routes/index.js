@@ -70,8 +70,15 @@ router.get('/signed-up', (req, res, next) => {
 
 router.get('/my-space', (req, res, next) => {
   // TODO: find all the coworks where _owner is the connected user
-  // then renser 'my-space
-  res.render('my-space');
+  Cowork.find({
+    _owner: req.user._id
+  })
+  .then(coworks => {
+      // then render 'my-space
+    res.render('my-space', {coworks});
+  })
+
+ 
 }); 
 
 
