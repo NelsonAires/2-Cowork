@@ -7222,4 +7222,7 @@ footer {
   font-size: 24px;
   text-align: center; }
 
+.page-index #map {
+  height: 400px; }
+
 /*# sourceMappingURL=style.css.map */

@@ -1,3 +1,5 @@
+require('dotenv').config();
+
 // Seeds file that remove all users and create 2 new users
 
 // To execute this seed, run from the root of the project
@@ -54,7 +56,7 @@ let coworks = [
       weekend: 'closed' 
     },
     location: {
-      type1: "Point",
+      type: "Point",
       coordinates: [-9.1452867, 38.7066134]
     }
   },
@@ -79,7 +81,7 @@ let coworks = [
       weekend: 'closed' 
     },
     location: {
-      type1: "Point",
+      type: "Point",
       coordinates: [-9.23665819, 38.6469761]
     }
   },
@@ -104,7 +106,7 @@ let coworks = [
       weekend: 'closed' 
     },
     location: {
-      type1: "Point",
+      type: "Point",
       coordinates: [-9.1828413, 38.7020686]
     }
   },
@@ -129,7 +131,7 @@ let coworks = [
       weekend: 'closed' 
     },
     location: {
-      type1: "Point",
+      type: "Point",
       coordinates: [-9.1432403, 38.7565371]
     }
   },
@@ -154,7 +156,7 @@ let coworks = [
       weekend: 'closed' 
     },
     location: {
-      type1: "Point",
+      type: "Point",
       coordinates: [-9.23665819, 38.6469761]
     }
   },
@@ -179,7 +181,7 @@ let coworks = [
       weekend: 'closed' 
     },
     location: {
-      type1: "Point",
+      type: "Point",
       coordinates: [-9.1497635, 17, 38.7172234]
     }
   },
@@ -204,7 +206,7 @@ let coworks = [
       weekend: 'closed' 
     },
     location: {
-      type1: "Point",
+      type: "Point",
       coordinates: [-9.1470209, 38.7348591]
     }
   },
@@ -229,7 +231,7 @@ let coworks = [
       weekend: 'closed' 
     },
     location: {
-      type1: "Point",
+      type: "Point",
       coordinates: [-9.100224, 38.7702102]
     }
   }, 
@@ -254,7 +256,7 @@ let coworks = [
       weekend: 'closed' 
     },
     location: {
-      type1: "Point",
+      type: "Point",
       coordinates: [-9.1548361, 38.7216649]
     }
   }, 
@@ -279,7 +281,7 @@ let coworks = [
       weekend: 'closed' 
     },
     location: {
-      type1: "Point",
+      type: "Point",
       coordinates: [-9.1495605, 38.728708]
     }
   }, 
@@ -304,7 +306,7 @@ let coworks = [
       weekend: '24 hours' 
     },
     location: {
-      type1: "Point",
+      type: "Point",
       coordinates: [-9.1807824, 38.702878]
     }
   }, 
@@ -329,7 +331,7 @@ let coworks = [
       weekend: '9:00 am - 7:00 pm' 
     },
     location: {
-      type1: "Point",
+      type: "Point",
       coordinates: [-9.1692683, 38.755383]
     }
   }, 
@@ -354,7 +356,7 @@ let coworks = [
       weekend: '24 hours' 
     },
     location: {
-      type1: "Point",
+      type: "Point",
       coordinates: [-9.1451212, 38.7249888]
     }
   }, 
@@ -379,7 +381,7 @@ let coworks = [
       weekend: 'closed' 
     },
     location: {
-      type1: "Point",
+      type: "Point",
       coordinates: [-9.1500005, 38.7321525]
     }
   }, 
@@ -404,7 +406,7 @@ let coworks = [
       weekend: 'closed' 
     },
     location: {
-      type1: "Point",
+      type: "Point",
       coordinates: [-9.1337696, 38.7212756]
     }
   }, 
@@ -429,7 +431,7 @@ let coworks = [
       weekend: 'closed' 
     },
     location: {
-      type1: "Point",
+      type: "Point",
       coordinates: [-9.1549633, 38.7107974]
     }
   }, 
@@ -454,7 +456,7 @@ let coworks = [
       weekend: 'closed' 
     },
     location: {
-      type1: "Point",
+      type: "Point",
       coordinates: [-9.1491892, 38.7317572]
     }
   }, 
@@ -479,7 +481,7 @@ let coworks = [
       weekend: '11:00 am - 7:00 pm' 
     },
     location: {
-      type1: "Point",
+      type: "Point",
       coordinates: [-9.1485324, 38.5979802]
     }
   }, 
@@ -504,7 +506,7 @@ let coworks = [
       weekend: 'closed' 
     },
     location: {
-      type1: "Point",
+      type: "Point",
       coordinates: [-9.1385534, 38.7132222]
     }
   }, 
@@ -529,7 +531,7 @@ let coworks = [
       weekend: '24 hours' 
     },
     location: {
-      type1: "Point",
+      type: "Point",
       coordinates: [-9.1836484, 38.7013927]
     }
   }, 
@@ -554,7 +556,7 @@ let coworks = [
       weekend: 'Closed' 
     },
     location: {
-      type1: "Point",
+      type: "Point",
       coordinates: [-9.1549217, 38.7212463]
     }
   }, 

@@ -129,7 +129,6 @@ router.get("/signed-up", (req, res, next) => {
 });
 
 router.get("/confirmation/:confirmationCode", (req, res) => {
-  // TODO
   // Find the user with the confirmation code and make his status active
   // Render a page with a success/failure confirmation
   User.findOne({
