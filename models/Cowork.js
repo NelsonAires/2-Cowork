@@ -22,8 +22,12 @@ const coworkSchema = new Schema({
     weekend: String, 
   }],
   location: {
-    type1: String,
+    type: { type:String },
     coordinates: [Number]
+  },
+  _owner: {
+    type: Schema.Types.ObjectId,
+    ref: 'User'
   }
 });
 

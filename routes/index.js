@@ -1,7 +1,7 @@
 const express = require('express');
 const router  = express.Router();
 const Cowork = require('../models/Cowork')
-// const Picture = require('../models/picture'); 
+const checkConnected = require('../middlewares').checkConnected
 
 /* GET home page */
 router.get('/', (req, res, next) => {
@@ -12,9 +12,15 @@ router.get('/', (req, res, next) => {
     });
 });
 
-
-router.get('/add-space', (req, res, next) => {
+router.get('/add-space', checkConnected, (req, res, next) => {
   res.render('add-space');
+});
+
+router.post('/add-space', checkConnected, (req, res, next) => {
+  console.log('req.body', req.body)
+  // TODO: continue
+  // Create a Cowork
+  // when it's done, redirect to the detail page
 });
 
 /* router.get('/', function(req, res, next) {
@@ -45,6 +51,8 @@ router.get('/signed-up', (req, res, next) => {
 }); 
 
 router.get('/my-space', (req, res, next) => {
+  // TODO: find all the coworks where _owner is the connected user
+  // then renser 'my-space
   res.render('my-space');
 }); 
 

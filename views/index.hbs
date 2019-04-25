@@ -1,139 +1,113 @@
-<!DOCTYPE html>
-<html lang="en">
+<script src='https://static-assets.mapbox.com/gl-pricing/dist/mapbox-gl.js'></script>
+<link href='https://api.mapbox.com/mapbox-gl-js/v0.53.0/mapbox-gl.css' rel='stylesheet' />
 
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <link rel='shortcut icon' type='image/x-icon' sizes="16x16" href='../public/images/Fav2c-01.png'/>
-  <script src='https://static-assets.mapbox.com/gl-pricing/dist/mapbox-gl.js'></script>
-  <link href='https://api.mapbox.com/mapbox-gl-js/v0.53.0/mapbox-gl.css' rel='stylesheet' />
-  <title>2Cowork</title>
 
- 
-  <link rel="stylesheet" href="../stylesheets/style.scss">
-  <style>
-    #map {
-      height: 400px;
-      align-content: center
-      ;
-    }
-  </style>
-</head>
-<body>
+
+<div class="page-index">
+
   <!-------------CAROUSEL 2-------------->
   <div class="carousel">
-  <div class="bd-example">
-  <div id="carouselExampleCaptions" class="carousel slide" data-ride="carousel">
-    <ol class="carousel-indicators">
-      <li data-target="#carouselExampleCaptions" data-slide-to="0" class="active"></li>
-      <li data-target="#carouselExampleCaptions" data-slide-to="1"></li>
-      <li data-target="#carouselExampleCaptions" data-slide-to="2"></li>
-      <li data-target="#carouselExampleCaptions" data-slide-to="3"></li>
-      <li data-target="#carouselExampleCaptions" data-slide-to="4"></li>
-    </ol>
-    <div class="carousel-inner">
-      <div class="carousel-item active">
-        <img src="/images/Slide_1.jpg" class="d-block w-100" alt="1.jpg">
-        <div class="carousel-caption d-none d-md-block">
-          <h5>Desks, offices and meeting rooms.</h5>
-          <p>Join our networking spaces</p>
+    <div class="bd-example">
+      <div id="carouselExampleCaptions" class="carousel slide" data-ride="carousel">
+        <ol class="carousel-indicators">
+          <li data-target="#carouselExampleCaptions" data-slide-to="0" class="active"></li>
+          <li data-target="#carouselExampleCaptions" data-slide-to="1"></li>
+          <li data-target="#carouselExampleCaptions" data-slide-to="2"></li>
+          <li data-target="#carouselExampleCaptions" data-slide-to="3"></li>
+          <li data-target="#carouselExampleCaptions" data-slide-to="4"></li>
+        </ol>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="/images/Slide_1.jpg" class="d-block w-100" alt="1.jpg">
+            <div class="carousel-caption d-none d-md-block">
+              <h5>Desks, offices and meeting rooms.</h5>
+              <p>Join our networking spaces</p>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src="/images/Slide_2.jpg" class="d-block w-100" alt="2.jpg">
+            <div class="carousel-caption d-none d-md-block">
+              <h5>Connect with friendly communities.</h5>
+              <p>Create yours</p>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src="/images/Slide_3.jpg" class="d-block w-100" alt="3.jpg">
+            <div class="carousel-caption d-none d-md-block">
+              <h5>Join us! Add your own space.</h5>
+              <p>Use add space tab</p>
+            </div>
+          </div>
+
+          <div class="carousel-item">
+            <img src="/images/Slide_4.jpg" class="d-block w-100" alt="4.jpg">
+            <div class="carousel-caption d-none d-md-block">
+              <h5>Sign up 2Cowork and get our newsletter</h5>
+              <p>Fill in our form</p>
+            </div>
+          </div>
+
+          <div class="carousel-item">
+            <img src="/images/Slide_5.jpg" class="d-block w-100" alt="5.jpg">
+            <div class="carousel-caption d-none d-md-block">
+              <h5>Hundreds of people are coworking around the world.</h5>
+              <p>Use our conference rooms also</p>
+            </div>
+          </div>
         </div>
       </div>
-      <div class="carousel-item">
-        <img src="/images/Slide_2.jpg" class="d-block w-100" alt="2.jpg">
-        <div class="carousel-caption d-none d-md-block">
-          <h5>Connect with friendly communities.</h5>
-          <p>Create yours</p>
-        </div>
-      </div>
-      <div class="carousel-item">
-        <img src="/images/Slide_3.jpg" class="d-block w-100" alt="3.jpg">
-        <div class="carousel-caption d-none d-md-block">
-          <h5>Join us! Add your own space.</h5>
-          <p>Use add space tab</p>
-        </div>
-      </div>
-    
-    <div class="carousel-item">
-        <img src="/images/Slide_4.jpg" class="d-block w-100" alt="4.jpg">
-        <div class="carousel-caption d-none d-md-block">
-          <h5>Sign up 2Cowork and get our newsletter</h5>
-          <p>Fill in our form</p>
-        </div>
-      </div>
-    
-    <div class="carousel-item">
-        <img src="/images/Slide_5.jpg" class="d-block w-100" alt="5.jpg">
-        <div class="carousel-caption d-none d-md-block">
-          <h5>Hundreds of people are coworking around the world.</h5>
-          <p>Use our conference rooms also</p>
-        </div>
-      </div>
-    </div>
-    </div>
 
 
-    <a class="carousel-control-prev" href="#carouselExampleCaptions" role="button" data-slide="prev">
-      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-      <span class="sr-only">Previous</span>
-    </a>
-    <a class="carousel-control-next" href="#carouselExampleCaptions" role="button" data-slide="next">
-      <span class="carousel-control-next-icon" aria-hidden="true"></span>
-      <span class="sr-only">Next</span>
-    </a>
+      <a class="carousel-control-prev" href="#carouselExampleCaptions" role="button" data-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="sr-only">Previous</span>
+      </a>
+      <a class="carousel-control-next" href="#carouselExampleCaptions" role="button" data-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="sr-only">Next</span>
+      </a>
+    </div>
   </div>
-</div>
 
-</div>
-  
+
+
   <div id='map'></div>
-  <script>
-    mapboxgl.accessToken = 'pk.eyJ1Ijoic29maWFvIiwiYSI6ImNqdWwxZXdqZDA2c3QzeW81YmtpNHN2eTAifQ.eEz8uoeY77tN7lOzpxgBFg';
 
-    //Embed a map in a tag with the id `map`
-    var map = new mapboxgl.Map({
-      container: 'map',
-      style: 'mapbox://styles/sofiao/cjutmyam904g81fmxl9acdlg1',
-      center: [-9.1527, 38.7108], // starting position
-      zoom: 10 // starting zoom
-    });
+  <div class="comments">teste de senisgas lá dentro
+  </div>
 
-    // Add zoom and rotation controls to the map.
-    map.addControl(new mapboxgl.NavigationControl(), 'bottom-right');
+</div>
 
+<script>
+  mapboxgl.accessToken = 'pk.eyJ1Ijoic29maWFvIiwiYSI6ImNqdWwxZXdqZDA2c3QzeW81YmtpNHN2eTAifQ.eEz8uoeY77tN7lOzpxgBFg';
 
+  //Embed a map in a tag with the id `map`
+  var map = new mapboxgl.Map({
+    container: 'map',
+    style: 'mapbox://styles/sofiao/cjutmyam904g81fmxl9acdlg1',
+    center: [-9.1527, 38.7108], // starting position
+    zoom: 10 // starting zoom
+  });
 
-    // TODO: create the marker
-
-
-    //Add a marker
-    //1
-    var popup = new mapboxgl.Popup({ offset: 25 })
-      .setHTML('Construction on the <strong>Washington Monument</strong> began in 1848.');
-    var marker = new mapboxgl.Marker({
-      color: 'green'
-    })
-      .setLngLat([-9.1452867, 38.7066134])
-      .setPopup(popup)
-      .addTo(map);
-
-    var popup = new mapboxgl.Popup({ offset: 25 })
-      .setHTML('<strong>test</strong>');
-    var marker = new mapboxgl.Marker({
-      color: 'blue'
-    })
-      .setLngLat([-9.23665819, 38.6469761])
-      .setPopup(popup)
-      .addTo(map);
-    
-    
-  </script>
-
-    <div class="comments">teste de senisgas lá dentro
-    </div>
+  // Add zoom and rotation controls to the map.
+  map.addControl(new mapboxgl.NavigationControl(), 'bottom-right');
 
 
-</body>
+  {{#each coworks}}
+    try {
+      console.log("name", `{{this.name}}`)
+      console.log("lng", {{this.location.coordinates.[0]}})
+      console.log("lat", {{this.location.coordinates.[1]}})
 
-</html>
+      var popup = new mapboxgl.Popup({ offset: 25 })
+        .setHTML(`<a href="/cowork-detail/{{this._id}}">{{this.name}}</a>`);
+      var marker = new mapboxgl.Marker({
+        color: 'green'
+      })
+        .setLngLat([{{this.location.coordinates.[0]}}, {{this.location.coordinates.[1]}}])
+        .setPopup(popup)
+        .addTo(map);
+    }
+    catch(err) {}
+  {{/each}}
+</script>
