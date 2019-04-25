@@ -1,5 +1,9 @@
 <div class="container">
 
+  <style>
+    body {background-color: rgb(220, 220, 220);}
+</style>
+
   <h1>All co-works</h1>
   {{!-- <div class="container2"> --}}
   <div class="row">
@@ -16,6 +20,8 @@
               target="_blank">{{this.address}}</a></li>
           <li class="new3 list-group-item"><strong>{{this.prices}}</strong></li>
           <a href="/cowork-detail/{{this._id}}" class="card-link">More info</a>
+          <br>
+          
 
           {{#if ../isConnected }}
           <div class="btn btn-outline-primary">
