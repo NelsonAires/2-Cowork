@@ -19,6 +19,7 @@ router.get('/add-space', checkConnected, (req, res, next) => {
 router.post('/add-space', checkConnected, (req, res, next) => {
   console.log('req.body', req.body)
   Cowork.create({
+    images: req.body.images,
     name: req.body.name,
     address: req.body.address,
     email: req.body.email,
