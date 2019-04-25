@@ -4,6 +4,7 @@ const Cowork = require('../models/Cowork')
 const checkConnected = require('../middlewares').checkConnected
 const nodemailer = require('nodemailer');
 const User = require("../models/User");
+const uploadCloud = require('../config/cloudinary.js');
 
 
 /* GET home page */
@@ -21,10 +22,10 @@ router.get('/add-space', checkConnected, (req, res, next) => {
   res.render('add-space');
 });
 
-router.post('/add-space', checkConnected, (req, res, next) => {
+router.post('/add-space', checkConnected, uploadCloud.single('photo'), (req, res, next) => {
   console.log('req.body', req.body)
   Cowork.create({
-    images: req.body.images,
+    images: req.file.url,
     name: req.body.name,
     address: req.body.address,
     email: req.body.email,
@@ -32,8 +33,8 @@ router.post('/add-space', checkConnected, (req, res, next) => {
     description: req.body.description,
     prices: req.body.prices,
     opening_hours : {
-    week_day: req.body.week_day,
-    weekend: req.body.weekend
+      week_day: req.body.week_day,
+      weekend: req.body.weekend,
     },
     _owner: req.user._id
   })
