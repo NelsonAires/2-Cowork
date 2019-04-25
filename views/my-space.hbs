@@ -1,4 +1,4 @@
-<style>
+{{!-- <style>
     body {
       background-color: rgb(235, 235, 235);}
       
@@ -6,17 +6,11 @@
         text-align: center;
         color: darkmagenta;
       }
-</style>
+</style> --}}
 
-<div class="verify-email">
 
-    <p><strong>My Info Page</strong></p><br>
-    <p>Name</p><br>
-    <p>Address</p><br>
-    <p>Description</p><br>
-    <p>Amenities</p><br>
-    <p>Prices</p><br>
-    <p>Opening Hours</p><br>
-    <p><strong>Info from Do It button</strong></p>
-
-</div>
+<br>
+<h2>My Coworks</h2>
+{{#each coworks}} 
+<a href="/cowork-detail/{{_id}}"><ul><li>{{this.name}}</li></ul></a>
+{{/each}}
