@@ -33,7 +33,7 @@ router.post('/add-space', checkConnected, (req, res, next) => {
   })
   .then(() => {
     console.log("Cowork created, you are going to be redirected")
-    res.redirect('all-coworks')
+    res.redirect('my-space')
   })
   // TODO: continue
   // Create a Cowork
