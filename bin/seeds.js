@@ -533,6 +533,32 @@ let coworks = [
       coordinates: [-9.1836484, 38.7013927]
     }
   }, 
+   //21
+   { 
+    name: 'LINNK',
+    address: "Rua Braamcamp, 88, Lisbon, Portugal",
+    email:'@gmail.com',
+    website:'https://www.coworkcentral.pt',
+    images:'https://blog.go-work.com/wp-content/uploads/2018/07/ssc-3-e1533265382718.jpg',
+    description: "A collaborative space for innovation, Linnk is an ecosystem for innovation where entrepreneurs, developers, creatives and makers hang out to formulate projects and get their stuff done. Predominantly focused on design, IT and hardware development, they won't discriminate if you walk in the door with a different vision.",
+    amenities:{ 
+      basics:['Wifi',' Air-conditioning'],
+      equipment:['Printer', ' Scanner'],
+      facilities:['Kitchen'],
+      transportation:['2 Minute Walk From Public Transit'],
+      relax_zones:['Lounge', ' Chill-out Area'],
+    },
+    prices:'EUR 14.00/per day',
+    opening_hours: {
+      week_day: '9:00 am - 5:00 pm',
+      weekend: 'Closed' 
+    },
+    location: {
+      type1: "Point",
+      coordinates: [-9.1549217, 38.7212463]
+    }
+  }, 
+
 
 //COWORK
 
