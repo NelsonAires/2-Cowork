@@ -4,6 +4,7 @@ const Cowork = require('../models/Cowork')
 const checkConnected = require('../middlewares').checkConnected
 const nodemailer = require('nodemailer');
 const User = require("../models/User");
+const uploadCloud = require('../config/cloudinary.js');
 
 
 /* GET home page */
@@ -21,10 +22,10 @@ router.get('/add-space', checkConnected, (req, res, next) => {
   res.render('add-space');
 });
 
-router.post('/add-space', checkConnected, (req, res, next) => {
+router.post('/add-space', checkConnected, uploadCloud.single('photo'), (req, res, next) => {
   console.log('req.body', req.body)
   Cowork.create({
-    images: req.body.images,
+    images: req.file.url,
     name: req.body.name,
     address: req.body.address,
     email: req.body.email,
@@ -32,8 +33,8 @@ router.post('/add-space', checkConnected, (req, res, next) => {
     description: req.body.description,
     prices: req.body.prices,
     opening_hours : {
-    week_day: req.body.week_day,
-    weekend: req.body.weekend
+      week_day: req.body.week_day,
+      weekend: req.body.weekend,
     },
     _owner: req.user._id
   })
@@ -76,44 +77,45 @@ router.get('/cowork-detail/:coworkId', (req, res, next) => {
 });
 
 
-
 // ----------------send the email--------- TODO
 
 
 
-// router.post('/cowork-detail/:coworkId/reserve', (req, res, next) => {
-//   // TODO: send an email
-//   console.log("req.body", req.body)
-  // router.get('/cowork-detail/:coworkId', (req, res, next) => {
-  //   Cowork.findById(req.params.coworkId)
-  //     .then(() => {
-//         // send the email
-//           let transporter = nodemailer.createTransport({
-//             service: 'Gmail',
-//             auth: {
-//               user: process.env.GMAIL_USER,
-//               pass: process.env.GMAIL_PASS
-//             },
-//             tls: {
-//               rejectUnauthorized: false
-//             }
-//           });
-        
-//           transporter.sendMail({
-//               from: '"2-CoWork 👻" <2coworkiron@gmail.com>',
-//               to: email,
-//               subject: 'Email confirmed',
-//               text: '',
-//               html: `Bla Bla Bla Bla`,
-//             })
-        
-//             // When it s done, you can redirect to /cowork-detail/:coworkId/reserved
-//             .then(() => {
-              // res.redirect('/cowork-detail/:coworkId/reserved')
-//             })
-//       })
-//   });
-// });
+router.post('/cowork-detail/:coworkId/reserve', (req, res, next) => {
+  // TODO: send an email
+  console.log("req.body", req.body)
+  console.log("aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa")
+  Cowork.findById(req.params.coworkId)
+    .then(cowork => {
+      // send the email
+        let transporter = nodemailer.createTransport({
+          service: 'Gmail',
+          auth: {
+            user: process.env.GMAIL_USER,
+            pass: process.env.GMAIL_PASS
+          },
+          tls: {
+            rejectUnauthorized: false
+          }
+        });
+      
+        transporter.sendMail({
+            from: '"2CoWork 👻" <2coworkiron@gmail.com>',
+            to: cowork.email,
+            subject: '2Cowork Reservation for ' + req.body.date,
+            text: '',
+            html: `Hello ${cowork.name}, <br>
+              Someone has requested a booking for ${req.body.number} person(s) on ${req.body.date}
+            for ${req.body.name}. <br>
+            Please reply, this is not a vírus ;)`,
+          })
+      
+          // When it s done, you can redirect to /cowork-detail/:coworkId/reserved
+          .then(() => {
+            res.redirect('/cowork-detail/:coworkId/reserved')
+          })
+      })
+});
 
 router.get('/cowork-detail/:coworkId/reserved', (req, res, next) => {
   res.render('reserved');
@@ -123,7 +125,18 @@ router.post('/cowork-detail', checkConnected, (req, res, next) => {
   res.redirect('/reserved');
 });
 
+//////////TODO
+/* router.get('/cowork-detail/:coworkId/reserved', (req, res, next) => {
+  res.render('my-space');
+});
 
+router.post('/cowork-detail/_coworkId/reserved', checkConnected, (req, res, next) => {
+  res.redirect('/my-space');
+});
+ */
+
+
+///////
 router.get('/signed-up', (req, res, next) => {
   res.render('signed-up');
 });
