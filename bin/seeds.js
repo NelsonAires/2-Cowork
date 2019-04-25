@@ -157,7 +157,7 @@ let coworks = [
     },
     location: {
       type: "Point",
-      coordinates: [-9.23665819, 38.6469761]
+      coordinates: [-9.14405, 38.7166599]
     }
   },
 //6 
