@@ -7212,4 +7212,15 @@ footer {
 .image-framework {
   width: 50%; }
 
+.verify-email {
+  width: 100%;
+  height: 450px; }
+
+.verify-email p {
+  margin: 50px;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-size: 24px;
+  text-align: center;
+  color: deeppink; }
+
 /*# sourceMappingURL=style.css.map */
