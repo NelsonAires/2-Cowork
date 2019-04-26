@@ -75,8 +75,6 @@ router.get('/cowork-detail/:coworkId', (req, res, next) => {
 
 router.post('/cowork-detail/:coworkId/reserve', (req, res, next) => {
   // TODO: send an email
-  console.log("req.body", req.body)
-  console.log("aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa")
   Cowork.findById(req.params.coworkId)
     .then(cowork => {
       // send the email
@@ -126,11 +124,6 @@ router.post('/cowork-detail/:coworkId/reserved', checkConnected, (req, res, next
   res.redirect('/my-space/');
 });
 
-router.get('/my-space', (req, res, next) => {
-  console.log('lol')
-  res.render('my-space');
-});
-  
 router.post('/cowork-detail/:coworkId/reserved', checkConnected, (req, res, next) => {
   res.redirect('/my-space');
 });
@@ -145,6 +138,7 @@ router.get('/signed-up', (req, res, next) => {
 
 router.get('/my-space', (req, res, next) => {
   // TODO: find all the coworks where _owner is the connected user
+
   Cowork.find({
       _owner: req.user._id
     })
