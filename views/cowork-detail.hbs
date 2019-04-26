@@ -51,13 +51,13 @@
 
   p{
     font-family: 'Arimo', sans-serif;
-    font-size: 16px;
+    font-size: 18px;
     text-align: center;
     
     }
     strong{
       font-family:'Arimo', sans-serif; 
-      font-size:18px;
+      font-size:20px;
     }
 
     h1{
@@ -74,11 +74,11 @@
     <img src="{{cowork.images}}" alt="Img N/A" class="image-framework"> 
   </div>
 <br><br>
-<p><strong>Address:</strong> {{cowork.address}}</p> 
-<p><strong>Email:</strong> {{cowork.email}}</p> 
-<p><strong>Website:</strong> {{cowork.website}}</p> 
+<p><strong>Address:</strong><br> {{cowork.address}}</p> 
+<p><strong>Email:</strong><br> {{cowork.email}}</p> 
+<p><strong>Website:</strong><br> {{cowork.website}}</p> 
 <div class="description">
-  <p><strong>Description: </strong>{{cowork.description}}</p> 
+  <p><strong>Description: </strong><br>{{cowork.description}}</p> 
 </div>
 <p><strong>Amenities</strong><br> 
 <i>Basics:</i> {{#each cowork.amenities}}
@@ -101,7 +101,7 @@
   {{this.relax_zones}}
 {{/each}}
 </p> 
-<p><strong>Prices:</strong> {{cowork.prices}}</p> 
+<p><strong>Prices:</strong><br> {{cowork.prices}}</p> 
 <p><strong>Opening Hours:</strong><br> 
 <i>Week Days:</i> {{#each cowork.opening_hours}}
   {{this.week_day}}
