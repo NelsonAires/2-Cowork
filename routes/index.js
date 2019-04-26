@@ -40,21 +40,13 @@ router.post('/add-space', checkConnected, uploadCloud.single('photo'), (req, res
   })
   .then(() => {
     console.log("Cowork created, you are going to be redirected")
-    res.redirect('my-space')
+    res.redirect('/my-space')
   })
   // TODO: continue
   // Create a Cowork
   // when it's done, redirect to the detail page
 });
 
-
-
-
-/* router.get('/', function(req, res, next) {
-  Picture.find((err, pictures) => {
-    res.render('index', {pictures})
-  })
-}); */
 
 router.get('/all-coworks', (req, res, next) => {
   console.log("user:", req.user)
@@ -126,15 +118,23 @@ router.post('/cowork-detail', checkConnected, (req, res, next) => {
 });
 
 //////////TODO
-/* router.get('/cowork-detail/:coworkId/reserved', (req, res, next) => {
+router.get('/cowork-detail/:coworkId/reserved', (req, res, next) => {
   res.render('my-space');
 });
 
-router.post('/cowork-detail/_coworkId/reserved', checkConnected, (req, res, next) => {
+router.post('/cowork-detail/:coworkId/reserved', checkConnected, (req, res, next) => {
+  res.redirect('/my-space/');
+});
+
+router.get('/my-space', (req, res, next) => {
+  console.log('lol')
+  res.render('my-space');
+});
+  
+router.post('/cowork-detail/:coworkId/reserved', checkConnected, (req, res, next) => {
   res.redirect('/my-space');
 });
- */
-
+  
 
 ///////
 router.get('/signed-up', (req, res, next) => {
