@@ -4,31 +4,41 @@
     background-color: rgba(235, 235, 235, 0.637);
   }
 
-  p{
-    font-family: 'Arimo', sans-serif;
-    font-size: 16px;
-    text-align: center;
-    
-    }
-    strong{
-      font-family:'Arimo', sans-serif; 
-      font-size:18px;
-    }
-
     h1{
       padding:30px;
+      margin: auto;
       text-align: center;
       text-shadow: 3px 2px 2px rgba(157, 219, 153, 0.3);
       font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
       }
 
+    .my-space-detail{
+     font-family: 'Arimo', sans-serif;
+     text-align: center;
+     
+     }
+
+    .testmyspace{
+     font-family: 'Arimo', sans-serif;
+     font-size: 24px;
+     text-align: center;
+     text-decoration: none !important;
+     
+    }
+    .myspace{
+    padding-left: unset;
+    font-family: 'Arimo', sans-serif;
+    }
+
 </style>
 
 <br>
-<h2>My Coworks</h2>
-{{#each coworks}} 
-<a href="/cowork-detail/{{_id}}"><ul><li>{{this.name}}</li></ul></a>
-{{/each}}
+<h1>My Coworks</h1>
+<div class="my-space-detail">
+  {{#each coworks}} 
+    <a href="/cowork-detail/{{_id}}" class="testmyspace"><ul class="myspace">{{this.name}}</ul></a>
+  {{/each}}
+</div>
 
 
   {{!-- p {

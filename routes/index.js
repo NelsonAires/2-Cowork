@@ -73,7 +73,7 @@ router.get('/cowork-detail/:coworkId', (req, res, next) => {
 
 
 
-router.post('/cowork-detail/:coworkId/reserve', (req, res, next) => {
+router.post('/cowork-detail/:coworkId/reserve', checkConnected, (req, res, next) => {
   // TODO: send an email
   Cowork.findById(req.params.coworkId)
     .then(cowork => {
