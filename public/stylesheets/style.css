@@ -7144,7 +7144,7 @@ a.text-dark:hover, a.text-dark:focus {
   color: #777; }
 
 body {
-  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+  font: 16px "Arimo", sans-serif;
   display: flex;
   flex-direction: column;
   min-height: 100vh; }
@@ -7164,7 +7164,10 @@ nav {
   text-align: center; }
 
 .card {
-  background-color: 100, 100, 100, 0.5 !important; }
+  background-color: 100, 100, 100, 0.5 !important;
+  border: 10px solid white;
+  border-radius: 10px;
+  box-shadow: 8px 8px 11px 0px rgba(0, 0, 0, 0.144); }
 
 .card-img-top {
   width: 100%; }
@@ -7179,26 +7182,23 @@ nav {
 
 .new2 {
   border: none !important;
-  font-size: 12px; }
+  font-size: 14px; }
 
 .new3 {
   border: none !important;
-  font-size: 12px; }
-
-.card-link {
-  margin-left: 20px !important; }
+  font-size: 14px; }
 
 .comments {
   display: flex;
   height: 400px;
   width: 100%;
-  background-color: #c2c2c2; }
+  background-color: #ebebeb; }
 
 .centrar {
   align-content: center;
   justify-content: space-between;
   margin: auto;
-  padding: 10px; }
+  padding: 15px; }
 
 main {
   flex-grow: 1; }
@@ -7226,16 +7226,17 @@ main {
 
 .image-framework {
   width: 50%;
-  border: 10px solid rgba(255, 255, 255, 0.815);
+  border: 8px solid rgba(255, 255, 255, 0.815);
   border-radius: 20px;
-  box-shadow: 6px 6px 5px 0px rgba(0, 0, 0, 0.24); }
+  box-shadow: 8px 8px 11px 0px rgba(0, 0, 0, 0.24); }
 
 .img-cowork {
   text-align: center; }
 
-.description p {
-  text-align: center;
-  max-width: 400px; }
+.description {
+  align-items: center;
+  margin-left: 30%;
+  margin-right: 30%; }
 
 .verify-email {
   width: 100%;
