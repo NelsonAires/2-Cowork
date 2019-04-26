@@ -164,7 +164,7 @@ let coworks = [
   { 
     name: 'Cowork Príncipe Real',
     address: "Rua da Alegria, 122B, Lisbon, Portugal",
-    email:'@gmail.com',
+    email:'coworkprincipereal@gmail.com',
     website:'https://www.coworkcentral.pt',
     images:'https://www.lifegate.com/app/uploads/Second-Home-Lisboa-edited.png',
     description: 'Cowork Central is a hub for creative, independent minds situated bang in the heart of Lisbon. As well as desk and office space for freelancers, startups and small companies we provide a range of services with the goal of enabling you to focus on what’s most important: the success of your business.',
@@ -189,7 +189,7 @@ let coworks = [
   { 
     name: 'Avila Spaces',
     address: "Av. República, 6, Lisbon, Portugal",
-    email:'@gmail.com',
+    email:'avilaspaces@gmail.com',
     website:'https://www.coworkcentral.pt',
     images:'https://www.officelovin.com/wp-content/uploads/2017/07/avila.jpg',
     description: 'Located at Av. da República, close to Saldanha, it is a wide and quiet space, where several companies and professionals work, occupying one or more work stations, using the support of a professional secretariat, meeting and work rooms.',
@@ -214,7 +214,7 @@ let coworks = [
   { 
     name: 'IDEIA Parque das Nações',
     address: "Av. D. João II, 35, Lisbon, Portugal",
-    email:'@gmail.com',
+    email:'ideianacoes@gmail.com',
     website:'https://www.coworkcentral.pt',
     images:'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRl7JOIYGOOuByNvc5ggq9O2Hi9Y7MmIfk23cY3Xw_--QhLqopm',
     description: 'N/A',
@@ -239,7 +239,7 @@ let coworks = [
   { 
     name: 'Espaço 3D',
     address: "Rua Braamcamp, 84, Lisbon, Portugal",
-    email:'@gmail.com',
+    email:'espaco3d@gmail.com',
     website:'https://www.coworkcentral.pt',
     images:'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSWbnoN0wFPn8OFxu4moJmyD0z43L770HIS0aIhbdWF2Oge7mXf4w',
     description: 'Come and meet the most interesting co-work community in Lisbon.We believe in balance and sustainability, that life is more than just work, that creative processes arise when least expected. We work passionately and are bind to something much bigger than us: helping entrepreneurs creating their dreams. We provide not just workspace, but also community and services that support forward-thinking people and companies.',
@@ -264,7 +264,7 @@ let coworks = [
   { 
     name: 'Palácio Sottomayor',
     address: "Avenida Fontes Pereira de Melo, 16, Lisbon, Portugal",
-    email:'@gmail.com',
+    email:'psottomayor@gmail.com',
     website:'https://www.coworkcentral.pt',
     images:'https://portugalstartups.com/wp-content/uploads/2016/02/impactHub_Amsterdam-1068x587.jpg',
     description: 'N/A',
@@ -289,7 +289,7 @@ let coworks = [
   { 
     name: 'Coworklisboa',
     address: "Rua Rodrigues Faria, 103, Lisbon, Portugal",
-    email:'@gmail.com',
+    email:'coworklisboa@gmail.com',
     website:'https://www.coworkcentral.pt',
     images:'https://www.coworkbooking.com/images/742!504/kapacita/4009/auditorium.jpg',
     description: 'A shared workspace with an eclectic mix of independent professionals sounds like an intriguing venture to get into doesn’t it? If you answered yes, you’re up for some great times ahead at Coworklisboa. Diverse professionals from designers, entrepreneurs, techies to scientists make their way to share a workspace in Coworklisboa. You’re probably the only one left who’s missing out on all the fun.',
@@ -314,7 +314,7 @@ let coworks = [
   { 
     name: 'Workup',
     address: "Rua Tomás da Fonseca, 40A, Lisbon, Portugal",
-    email:'@gmail.com',
+    email:'workup@gmail.com',
     website:'https://www.coworkcentral.pt',
     images:'https://d2lgtvdb6hylu5.cloudfront.net/439bc45e66f52eb860b9a12bf7768cf9716af9d0/12379.560x398x0.jpg',
     description: 'Workup is an innovative Cowork concept that provides a workspace in the center of Lisbon, 5 minutes from the airport in a privileged location beside the university stadium, next to the golf Academy, very close to the Classical University and the Catholic University, on the same street where is one of the largest business area of ​​Lisbon, Torres de Lisboa, with an excellent location both for those who want to develop their academic work, professional or business activity.',
@@ -339,7 +339,7 @@ let coworks = [
   { 
     name: 'House of Maria Amalia',
     address: "Rua Padre Luís Aparício, 9, Lisbon, Portugal",
-    email:'@gmail.com',
+    email:'hmariaamalia@gmail.com',
     website:'https://www.coworkcentral.pt',
     images:'https://assets-global.website-files.com/5a8dab23b7a50a0001e1ecc6/5b294df574d0a24be1b25e17_Remote%20Year%20Coworking%20Spaces.jpg',
     description: 'PET FRIENDLY COWORKING SPACE | LISBOA ',
@@ -364,7 +364,7 @@ let coworks = [
   { 
     name: 'BWORKING SPACE',
     address: "Rua Latino Coelho, 13A, Lisbon, Portugal",
-    email:'@gmail.com',
+    email:'bworkingspace@gmail.com',
     website:'https://www.coworkcentral.pt',
     images:'https://cdn-images-1.medium.com/max/1496/0*PrpD0ee9XQWW0jFC.jpg',
     description: 'The ideal solution for creative and professional businessmen looking for a space in Lisbon. The tables are surrounded by giant windows that create an incredible atmosphere of comfort that only natural light can provide and if you still want to catch the beautiful Lisbon sun.',
@@ -389,7 +389,7 @@ let coworks = [
   { 
     name: 'Garagem Infinita',
     address: "Rua Damasceno Monteiro, 110D, Lisbon, Portugal",
-    email:'@gmail.com',
+    email:'garageminfinita@gmail.com',
     website:'https://www.coworkcentral.pt',
     images:'https://static1.squarespace.com/static/53dc4794e4b0397c480f3887/t/56ef29de86db433c87c872ab/1458514502791/',
     description: 'We host creatives, designers, developers, entrepreneurs, and digital nomads in a remodeled garage-turned-office. If you need temporary office space, a meeting room to pitch your startup or want to organize an event or workshop in Portugal, Garagem Infinita is ready to help you.',
@@ -414,7 +414,7 @@ let coworks = [
   { 
     name: 'WIP Lisboa',
     address: "Rua São Bento, 31, Lisbon, Portugal",
-    email:'@gmail.com',
+    email:'wip@gmail.com',
     website:'https://www.coworkcentral.pt',
     images:'https://barbaracameronpix.com/wp-content/uploads/2018/10/bcp_181012_4820_LR.jpg',
     description: 'WIP is a community driven work space designed to inspire and support your individual and collaborative projects.',
@@ -464,7 +464,7 @@ let coworks = [
   { 
     name: 'Entrepreneur Houses',
     address: "Rua dos lirios, 271, Amora, Lisbon, Portugal",
-    email:'@gmail.com',
+    email:'entrepreneurhouses@gmail.com',
     website:'https://www.coworkcentral.pt',
     images:'https://s3-ap-southeast-1.amazonaws.com/esquire-sg/2019/03/18203218/the-cocoon-space-design-orchard-local-fashion-singapore-sustainability-eco-friendly-co-working-space-esquire-singapore-esquiresg-cover-740x370.jpg',
     description: 'Entrepreneur Houses has a spacious 250m2 Co-Working space. It is located on the south shore of the Rio Tejo, close to Aroeira, Costa da Caparica and the different beaches, where you can do Yoga, Surf, Kite Surf...',
@@ -489,7 +489,7 @@ let coworks = [
   { 
     name: 'BECO',
     address: "Rua da Madalena, Lisbon, 214, Portugal",
-    email:'@gmail.com',
+    email:'becoo@gmail.com',
     website:'https://www.coworkcentral.pt',
     images:'https://museumplanner.org/wp-content/uploads/2018/10/46dd41f1ab67c4313184c0f78447d323_XL.jpg',
     description: 'BECO is a co-working space focused in the creative industries, that aims to result has a micro and tailored creative hub that inspires everyone who is involved. The synergistic effect will be enhanced by the fact that this space only accommodates 25 creative minds. Besides this, BECO intent to activate several talks & exhibitions to empower talented creatives and share new thoughts.',
@@ -514,7 +514,7 @@ let coworks = [
   { 
     name: 'Village Underground',
     address: "Rua 1º de Maio, 103, Lisbon, Portugal",
-    email:'@gmail.com',
+    email:'villageundergroundd@gmail.com',
     website:'https://www.coworkcentral.pt',
     images:'http://blog.websummit.net/wp-content/uploads/2016/03/lisbonblog8.jpg',
     description: 'An international platform for culture and creativity, Village Underground sits in the coworking hub of Lisbon, Portugal. A quirky space, the venue has a unique architecture in that the structure is made from shipping containers and double decker buses recycled into office spaces, a recording studio plus a restaurant and a conference room. It is now a landmark on the Lisbon landscape and home to the creative community in the city.',
@@ -539,7 +539,7 @@ let coworks = [
    { 
     name: 'LINNK',
     address: "Rua Braamcamp, 88, Lisbon, Portugal",
-    email:'@gmail.com',
+    email:'linkk@gmail.com',
     website:'https://www.coworkcentral.pt',
     images:'https://blog.go-work.com/wp-content/uploads/2018/07/ssc-3-e1533265382718.jpg',
     description: "A collaborative space for innovation, Linnk is an ecosystem for innovation where entrepreneurs, developers, creatives and makers hang out to formulate projects and get their stuff done. Predominantly focused on design, IT and hardware development, they won't discriminate if you walk in the door with a different vision.",
